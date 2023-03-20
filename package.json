@@ -5,6 +5,9 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "start:dev": "npx nodemon",
     "start": "npm run build && node dist/index.js",
