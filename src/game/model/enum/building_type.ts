@@ -1,16 +1,16 @@
 export enum BuildingType{
-    Cottage         = "",
-    Warehouse       = "",
-    Barracks        = "",
-    Stable          = "",
-    Workshop        = "",
-    Amphitheatre    = "",
-    Market          = "",
-    University      = "",
-    Temple          = "",
+    Cottage         = "cottage",
+    Warehouse       = "warehouse",
+    Barracks        = "barracks",
+    Stable          = "stable",
+    Workshop        = "workshop",
+    Amphitheatre    = "amphitheatre",
+    Market          = "market",
+    University      = "university",
+    Temple          = "temple",
 
-    Farm            = "",
-    Quarry          = "",
-    Sawmill         = "",
-    IronMine        = ""
+    Farm            = "farm",
+    Quarry          = "quarry",
+    Sawmill         = "sawmill",
+    IronMine        = "ironmine"
 }
