@@ -1,1 +1,1 @@
-export { User, Cities } from './models/';
+export { User } from './model';
