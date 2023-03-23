@@ -8,7 +8,11 @@ export enum ResourceType{
 
     notApply        = "notapply",
 
-    // Buffs
+    // Buffs for level
+    BuffFood                = "bufffood",
+    BuffWood                = "buffwood",
+    BuffIron                = "buffiron",
+    BuffStone               = "buffstone",
     BuffTimeUnit            = "bufftimeunit",
     BuffTimeUnitBuilding    = "bufftimeunitbuilding",
     BuffTimeSearch          = "bufftimesearch",
