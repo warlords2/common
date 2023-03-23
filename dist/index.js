@@ -1,6 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Cities = exports.User = void 0;
-var models_1 = require("./models/");
-Object.defineProperty(exports, "User", { enumerable: true, get: function () { return models_1.User; } });
-Object.defineProperty(exports, "Cities", { enumerable: true, get: function () { return models_1.Cities; } });
+exports.province_scale_default = exports.building_scale_default = exports.BuildingType = exports.NpcType = exports.UnitType = exports.ProvinceType = exports.ResourceType = void 0;
+var game_1 = require("./game");
+Object.defineProperty(exports, "ResourceType", { enumerable: true, get: function () { return game_1.ResourceType; } });
+Object.defineProperty(exports, "ProvinceType", { enumerable: true, get: function () { return game_1.ProvinceType; } });
+Object.defineProperty(exports, "UnitType", { enumerable: true, get: function () { return game_1.UnitType; } });
+Object.defineProperty(exports, "NpcType", { enumerable: true, get: function () { return game_1.NpcType; } });
+Object.defineProperty(exports, "BuildingType", { enumerable: true, get: function () { return game_1.BuildingType; } });
+var game_2 = require("./game");
+Object.defineProperty(exports, "building_scale_default", { enumerable: true, get: function () { return game_2.building_scale_default; } });
+Object.defineProperty(exports, "province_scale_default", { enumerable: true, get: function () { return game_2.province_scale_default; } });

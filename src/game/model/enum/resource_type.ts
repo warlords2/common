@@ -1,4 +1,3 @@
-import { NONAME } from "dns";
 
 export enum ResourceType{
     Food        = "food",

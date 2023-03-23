@@ -1,3 +1,6 @@
+import { World } from "../game/model/world"
+
 export interface User{
-    name:string
+    name: String,
+    worlds: World[]
 }
