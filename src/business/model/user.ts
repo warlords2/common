@@ -1,7 +1,10 @@
+import { IsNotEmpty } from "class-validator";
+import { IUser } from "@core";
 import { Player } from "../game";
 
 
-export interface User{
-    name: String,
+export class User implements IUser{
+    @IsNotEmpty()
+    name: String;
     players: Player[];
 }
