@@ -11,18 +11,20 @@
   "scripts": {
     "start:dev": "npx nodemon",
     "start": "npm run build && node dist/index.js",
-    "build": "rimraf ./dist && tsc",
+    "build": "rimraf ./dist && tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "gil",
   "dependencies": {
+    "class-validator": "^0.14.0",
     "dotenv": "^16.0.3"
   },
   "devDependencies": {
-    "typescript": "5.0.2",
     "@types/node": "18.15.3",
     "nodemon": "2.0.21",
     "rimraf": "4.4.0",
-    "ts-node": "10.9.1"
+    "ts-node": "10.9.1",
+    "tsc-alias": "^1.8.5",
+    "typescript": "5.0.2"
   }
 }

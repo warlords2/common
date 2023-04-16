@@ -1,7 +1,17 @@
-export { World, Unit, Resource, Province, Player, Npc, Market, City, Building } from './game';
-export { Scale, ResourceScale, ProvinceScale, BuildingScale, Transaction, Sale, Offer, Buy } from './game';
-export { Position } from './game';
-export { ResourceType, ProvinceType, UnitType, NpcType, BuildingType } from './game';
-export { building_scale_default, province_scale_default } from './game';
+export * from '@core';
+export * from '@business';
 
-export { User } from './model';
+import { validate } from 'class-validator';
+import { IUser } from './core';
+
+/*
+let test:IUser =  {name: "possivelemail", players: []};
+
+validate(post).then(errors => {
+    // errors is an array of validation errors
+    if (errors.length > 0) {
+      console.log('validation failed. errors: ', errors);
+    } else {
+      console.log('validation succeed');
+    }
+});*/

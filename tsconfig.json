@@ -1,13 +1,27 @@
 {
-    "compilerOptions": {
+  "version": "2.4.2",
+  "compilerOptions": {
+      "lib": ["es5", "es6"],
+      "target": "es6",
       "module": "commonjs",
-      "target": "es5",
-      "resolveJsonModule": true,
-      "esModuleInterop": true,
-      "declaration": true,
+      "moduleResolution": "node",
       "outDir": "./dist",
-    },
-    "include": [
-        "src/**/*"
-    ]
+
+      "baseUrl":".",
+      "paths": {
+        "@core": ["src/core/index.ts"],
+        "@business":["src/business/index.ts"]
+      },
+
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+	    "resolveJsonModule": true,
+	    "allowSyntheticDefaultImports": true,
+      "declaration": true,
+      "sourceMap": true
+      
+  },
+  "exclude": [
+      "node_modules"
+  ]
 }

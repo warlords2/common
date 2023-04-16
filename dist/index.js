@@ -1,12 +1,30 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.province_scale_default = exports.building_scale_default = exports.BuildingType = exports.NpcType = exports.UnitType = exports.ProvinceType = exports.ResourceType = void 0;
-var game_1 = require("./game");
-Object.defineProperty(exports, "ResourceType", { enumerable: true, get: function () { return game_1.ResourceType; } });
-Object.defineProperty(exports, "ProvinceType", { enumerable: true, get: function () { return game_1.ProvinceType; } });
-Object.defineProperty(exports, "UnitType", { enumerable: true, get: function () { return game_1.UnitType; } });
-Object.defineProperty(exports, "NpcType", { enumerable: true, get: function () { return game_1.NpcType; } });
-Object.defineProperty(exports, "BuildingType", { enumerable: true, get: function () { return game_1.BuildingType; } });
-var game_2 = require("./game");
-Object.defineProperty(exports, "building_scale_default", { enumerable: true, get: function () { return game_2.building_scale_default; } });
-Object.defineProperty(exports, "province_scale_default", { enumerable: true, get: function () { return game_2.province_scale_default; } });
+__exportStar(require("./core/index.js"), exports);
+__exportStar(require("./business/index.js"), exports);
+/*
+let test:IUser =  {name: "possivelemail", players: []};
+
+validate(post).then(errors => {
+    // errors is an array of validation errors
+    if (errors.length > 0) {
+      console.log('validation failed. errors: ', errors);
+    } else {
+      console.log('validation succeed');
+    }
+});*/ 
+//# sourceMappingURL=index.js.map
