@@ -3,6 +3,6 @@ import { ValidationError } from "class-validator";
 export declare class Position implements IPosition {
     x: number;
     y: number;
-    isValid(): Promise<ValidationError[][]>;
+    isValid(): Promise<ValidationError[]>;
     constructor(values?: any);
 }

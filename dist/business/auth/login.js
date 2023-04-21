@@ -14,10 +14,11 @@ const _core_1 = require("../../core/index.js");
 const class_validator_1 = require("class-validator");
 class Login {
     isValid() {
-        let isDefaultValid = (0, class_validator_1.validate)(this, { groups: undefined });
-        let groups = [this.type];
-        let isAuthValid = (0, class_validator_1.validate)(this, { groups });
-        return Promise.all([isDefaultValid, isAuthValid]);
+        let groups = undefined;
+        if (this.type)
+            groups = [this.type];
+        let isValid = (0, class_validator_1.validate)(this, { groups, validationError: { target: false } });
+        return isValid;
     }
     constructor(values = {}) {
         if (Object.entries(values).length === 0 && values.constructor === Object) {
@@ -44,7 +45,6 @@ __decorate([
         minUppercase: 1,
         minLowercase: 1
     }, {
-        message: '',
         groups: [_core_1.TypeLogin.MAIL]
     }),
     __metadata("design:type", String)
@@ -55,5 +55,9 @@ __decorate([
     }),
     __metadata("design:type", String)
 ], Login.prototype, "nonce", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], Login.prototype, "type", void 0);
 exports.Login = Login;
 //# sourceMappingURL=login.js.map

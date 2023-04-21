@@ -7,6 +7,6 @@ export declare class Login implements ILogin {
     nonce: string;
     type: TypeLogin;
     user: User;
-    isValid(): Promise<ValidationError[][]>;
+    isValid(): Promise<ValidationError[]>;
     constructor(values?: any);
 }

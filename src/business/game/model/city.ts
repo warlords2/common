@@ -15,11 +15,13 @@ export class City implements ICity{
     buildings: Building[];
     resources: Resource[];
 
-    isValid(): Promise<ValidationError[][]>{
+    isValid(): Promise<ValidationError[]>{
 
-      let isDefaultValid = validate(this,{ groups: undefined });
+      let groups = undefined;
 
-      return Promise.all([ isDefaultValid ]);
+      let isValid = validate(this, { groups , validationError: { target: false }});
+
+      return isValid;
     }
 
     constructor(values: any = {}) {

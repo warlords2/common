@@ -14,8 +14,9 @@ const class_validator_1 = require("class-validator");
 const position_1 = require("./geometry/position");
 class Building {
     isValid() {
-        let isDefaultValid = (0, class_validator_1.validate)(this, { groups: undefined });
-        return Promise.all([isDefaultValid]);
+        let groups = undefined;
+        let isValid = (0, class_validator_1.validate)(this, { groups, validationError: { target: false } });
+        return isValid;
     }
     constructor(values = {}) {
         if (Object.entries(values).length === 0 && values.constructor === Object) {

@@ -4,6 +4,6 @@ export declare class Scale implements IScale {
     max_level: number;
     multiplier: number;
     initial: number;
-    isValid(): Promise<ValidationError[][]>;
+    isValid(): Promise<ValidationError[]>;
     constructor(values?: any);
 }

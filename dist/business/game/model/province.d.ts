@@ -6,6 +6,6 @@ export declare class Province implements IProvince {
     name: String;
     position: Position;
     cities: City[];
-    isValid(): Promise<ValidationError[][]>;
+    isValid(): Promise<ValidationError[]>;
     constructor(values?: any);
 }

@@ -12,6 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.User = void 0;
 const class_validator_1 = require("class-validator");
 class User {
+    isValid() {
+        let groups = undefined;
+        let isValid = (0, class_validator_1.validate)(this, { groups, validationError: { target: false } });
+        return isValid;
+    }
 }
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),

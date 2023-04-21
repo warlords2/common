@@ -10,6 +10,6 @@ export declare class World implements IWorld {
     provinces: Province[];
     npcs: Npc[];
     players: Player[];
-    isValid(): Promise<ValidationError[][]>;
+    isValid(): Promise<ValidationError[]>;
     constructor(values?: any);
 }

@@ -10,6 +10,6 @@ export declare class City implements ICity {
     position: Position;
     buildings: Building[];
     resources: Resource[];
-    isValid(): Promise<ValidationError[][]>;
+    isValid(): Promise<ValidationError[]>;
     constructor(values?: any);
 }

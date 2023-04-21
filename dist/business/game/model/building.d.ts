@@ -4,6 +4,6 @@ import { Position } from "./geometry/position";
 export declare class Building implements IBuilding {
     type: BuildingType;
     position: Position;
-    isValid(): Promise<ValidationError[][]>;
+    isValid(): Promise<ValidationError[]>;
     constructor(values?: any);
 }

@@ -20,7 +20,6 @@ export class Login implements ILogin{
         minUppercase: 1,
         minLowercase: 1
     },{
-        message:'',
         groups:[ TypeLogin.MAIL ]
     })
     password: string;
@@ -30,17 +29,20 @@ export class Login implements ILogin{
     })
     nonce: string;
 
+    @IsNotEmpty()
     type: TypeLogin;
+
     user: User;
 
-    isValid(): Promise<ValidationError[][]>{
+    isValid(): Promise<ValidationError[]>{
+        
+        let groups = undefined;
 
-        let isDefaultValid = validate(this,{ groups: undefined });
+        if( this.type )groups = [ this.type ];
+        
+        let isValid = validate(this, { groups , validationError: { target: false }});
 
-        let groups = [ this.type ];
-        let isAuthValid = validate(this, { groups });
-
-        return Promise.all([ isDefaultValid, isAuthValid ]);
+        return isValid;
     }
 
     constructor(values: any = {}) {

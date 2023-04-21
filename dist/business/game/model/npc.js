@@ -13,8 +13,9 @@ exports.Npc = void 0;
 const class_validator_1 = require("class-validator");
 class Npc {
     isValid() {
-        let isDefaultValid = (0, class_validator_1.validate)(this, { groups: undefined });
-        return Promise.all([isDefaultValid]);
+        let groups = undefined;
+        let isValid = (0, class_validator_1.validate)(this, { groups, validationError: { target: false } });
+        return isValid;
     }
     constructor(values = {}) {
         if (Object.entries(values).length === 0 && values.constructor === Object) {
