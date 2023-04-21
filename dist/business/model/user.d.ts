@@ -5,4 +5,5 @@ export declare class User implements IUser {
     name: String;
     players: Player[];
     isValid(): Promise<ValidationError[]>;
+    constructor(values?: any);
 }

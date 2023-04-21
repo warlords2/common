@@ -16,4 +16,11 @@ export class User implements IUser{
 
         return isValid;
     }
+    
+    constructor(values: any = {}) {
+        if (Object.entries(values).length === 0 && values.constructor === Object) {
+          return;
+        }
+        Object.assign(this, values);
+    }
 }
