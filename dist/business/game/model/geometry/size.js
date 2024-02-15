@@ -9,16 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ResourceType = void 0;
+exports.Size = void 0;
 const class_validator_1 = require("class-validator");
-class ResourceType {
+class Size {
     isValid() {
         let groups = undefined;
         let isValid = (0, class_validator_1.validate)(this, { groups, validationError: { target: false } });
         return isValid;
     }
     constructor(values = {}) {
-        this.fixed = false;
         if (Object.entries(values).length === 0 && values.constructor === Object) {
             return;
         }
@@ -27,15 +26,13 @@ class ResourceType {
 }
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    __metadata("design:type", String)
-], ResourceType.prototype, "name", void 0);
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Number)
+], Size.prototype, "width", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
-], ResourceType.prototype, "multiplier", void 0);
-__decorate([
-    (0, class_validator_1.IsNotEmpty)(),
-    __metadata("design:type", Number)
-], ResourceType.prototype, "initial", void 0);
-exports.ResourceType = ResourceType;
-//# sourceMappingURL=resourceType.js.map
+], Size.prototype, "weight", void 0);
+exports.Size = Size;
+//# sourceMappingURL=size.js.map

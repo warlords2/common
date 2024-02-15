@@ -1,11 +1,12 @@
-import { IBuildingType, IBuilding } from "@core";
+import { IBuilding } from "@core";
 import { IsNotEmpty, validate, ValidationError } from "class-validator";
 import { Position } from "./geometry/position";
+import { BuildingType } from "./buildingType";
 
 export class Building implements IBuilding{
-
+    
     @IsNotEmpty()
-    type: IBuildingType;
+    type: BuildingType;
 
     @IsNotEmpty()
     position: Position;

@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Building = void 0;
 const class_validator_1 = require("class-validator");
 const position_1 = require("./geometry/position");
+const buildingType_1 = require("./buildingType");
 class Building {
     isValid() {
         let groups = undefined;
@@ -27,7 +28,7 @@ class Building {
 }
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    __metadata("design:type", Object)
+    __metadata("design:type", buildingType_1.BuildingType)
 ], Building.prototype, "type", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),

@@ -12,6 +12,7 @@ export { ResourceType } from "./enum/resource_type";
 
 // geometry's
 export { IPosition } from './geometry/position';
+export { ISize } from './geometry/size';
 
 // market's
 export { IBuy } from './market/buy';

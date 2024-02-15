@@ -6,6 +6,7 @@ export { UnitType } from "./enum/unit_type";
 export { ProvinceType } from "./enum/province_type";
 export { ResourceType } from "./enum/resource_type";
 export { IPosition } from './geometry/position';
+export { ISize } from './geometry/size';
 export { IBuy } from './market/buy';
 export { IOffer } from './market/offer';
 export { ISale } from './market/sale';

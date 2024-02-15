@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Resource = void 0;
 const class_validator_1 = require("class-validator");
 const typeorm_1 = require("typeorm");
+const resourceType_1 = require("./resourceType");
 class Resource {
     isValid() {
         let groups = undefined;
@@ -32,7 +33,7 @@ __decorate([
 ], Resource.prototype, "amount", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
-    __metadata("design:type", Object)
+    __metadata("design:type", resourceType_1.ResourceType)
 ], Resource.prototype, "type", void 0);
 exports.Resource = Resource;
 //# sourceMappingURL=resource.js.map

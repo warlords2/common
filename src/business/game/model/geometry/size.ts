@@ -1,29 +1,25 @@
-import { IResourceType } from "@core";
-import { IsNotEmpty, validate, ValidationError } from "class-validator";
+import { ISize } from "@core";
+import { IsNotEmpty, IsNumber, validate, ValidationError } from "class-validator";
 
-export class ResourceType implements IResourceType{
-    
-    @IsNotEmpty()
-    name: String;
+export class Size implements ISize{
 
-    max_level: number;
-    
     @IsNotEmpty()
-    multiplier: number;
-    
-    @IsNotEmpty()
-    initial: number;
+    @IsNumber()
+    width: number;
 
-    fixed = false;
+    @IsNotEmpty()
+    @IsNumber()
+    weight: number;
+
+    height: number;
 
     isValid(): Promise<ValidationError[]>{
 
         let groups = undefined;
-  
+
         let isValid = validate(this, { groups , validationError: { target: false }});
-  
+
         return isValid;
-  
     }
 
     constructor(values: any = {}) {
@@ -32,4 +28,4 @@ export class ResourceType implements IResourceType{
         }
         Object.assign(this, values);
     }
-}
+ }
