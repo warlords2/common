@@ -1,9 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.World = exports.Unit = exports.Resource = exports.Province = exports.Player = exports.Npc = exports.Market = exports.City = exports.Building = exports.ResourceType = exports.BuildingType = exports.Transaction = exports.Sale = exports.Offer = exports.Buy = exports.Position = void 0;
+exports.World = exports.Cost = exports.Unit = exports.Resource = exports.Province = exports.Player = exports.Npc = exports.Market = exports.City = exports.Building = exports.UnitType = exports.ResourceType = exports.BuildingType = exports.Transaction = exports.Sale = exports.Offer = exports.Buy = exports.Size = exports.Position = void 0;
 // geometry's
 var position_1 = require("./geometry/position");
 Object.defineProperty(exports, "Position", { enumerable: true, get: function () { return position_1.Position; } });
+var size_1 = require("./geometry/size");
+Object.defineProperty(exports, "Size", { enumerable: true, get: function () { return size_1.Size; } });
 // market's
 var buy_1 = require("./market/buy");
 Object.defineProperty(exports, "Buy", { enumerable: true, get: function () { return buy_1.Buy; } });
@@ -17,6 +19,8 @@ var buildingType_1 = require("./buildingType");
 Object.defineProperty(exports, "BuildingType", { enumerable: true, get: function () { return buildingType_1.BuildingType; } });
 var resourceType_1 = require("./resourceType");
 Object.defineProperty(exports, "ResourceType", { enumerable: true, get: function () { return resourceType_1.ResourceType; } });
+var unitType_1 = require("./unitType");
+Object.defineProperty(exports, "UnitType", { enumerable: true, get: function () { return unitType_1.UnitType; } });
 // model's
 var building_1 = require("./building");
 Object.defineProperty(exports, "Building", { enumerable: true, get: function () { return building_1.Building; } });
@@ -34,6 +38,8 @@ var resource_1 = require("./resource");
 Object.defineProperty(exports, "Resource", { enumerable: true, get: function () { return resource_1.Resource; } });
 var unit_1 = require("./unit");
 Object.defineProperty(exports, "Unit", { enumerable: true, get: function () { return unit_1.Unit; } });
+var cost_1 = require("./cost");
+Object.defineProperty(exports, "Cost", { enumerable: true, get: function () { return cost_1.Cost; } });
 var world_1 = require("./world");
 Object.defineProperty(exports, "World", { enumerable: true, get: function () { return world_1.World; } });
 //# sourceMappingURL=index.js.map

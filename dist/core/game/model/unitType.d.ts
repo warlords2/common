@@ -1,3 +1,4 @@
+import { ICost } from "./cost";
 export interface IUnitType {
     name: string;
     damage: number;
@@ -6,6 +7,5 @@ export interface IUnitType {
     speed: number;
     cargoCapacity: number;
     trainingTime: number;
-    foodConsumption: number;
-    currencyConsumption: number;
+    cost: ICost[];
 }

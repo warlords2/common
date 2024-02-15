@@ -1,12 +1,16 @@
+import { ResourceType } from "@business";
+import { IResourceType } from "./resourceType";
+import { ICost } from "./cost";
+
 export interface IUnitType{
     name: string;
     damage: number;
     health: number;
     agility: number;
+
     speed: number;
     cargoCapacity: number;
-
     trainingTime: number;
-    foodConsumption: number;
-    currencyConsumption: number;
+
+    cost: ICost[];
 }

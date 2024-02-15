@@ -54,11 +54,7 @@ __decorate([
 ], UnitType.prototype, "trainingTime", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    __metadata("design:type", Number)
-], UnitType.prototype, "foodConsumption", void 0);
-__decorate([
-    (0, class_validator_1.IsNotEmpty)(),
-    __metadata("design:type", Number)
-], UnitType.prototype, "currencyConsumption", void 0);
+    __metadata("design:type", Array)
+], UnitType.prototype, "cost", void 0);
 exports.UnitType = UnitType;
 //# sourceMappingURL=unitType.js.map

@@ -3,6 +3,7 @@ import { IsNotEmpty, validate, ValidationError } from "class-validator";
 import { Size } from "./geometry/size";
 import { ResourceType } from "./resourceType";
 import { UnitType } from "./unitType";
+import { Cost } from "./cost";
 
 export class BuildingType implements IBuildingType{
 
@@ -22,8 +23,12 @@ export class BuildingType implements IBuildingType{
     multiplier_unit_time: number;
     unitsGenerate: UnitType[];
 
+    // warehouse
+    hasStore: boolean;
+    multiplier_storage: number;
+
     resources: ResourceType[];
-    cost: ResourceType[];
+    cost: Cost[];
 
     isValid(): Promise<ValidationError[]>{
 

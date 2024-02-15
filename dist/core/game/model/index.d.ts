@@ -18,4 +18,5 @@ export { IResourceType } from './resourceType';
 export { IResource } from './resource';
 export { IUnitType } from './unitType';
 export { IUnit } from './unit';
+export { ICost } from './cost';
 export { IWorld } from './world';

@@ -1,5 +1,6 @@
 import { IUnitType } from "../../../core/index.js";
 import { ValidationError } from "class-validator";
+import { Cost } from "./cost";
 export declare class UnitType implements IUnitType {
     name: string;
     damage: number;
@@ -8,8 +9,7 @@ export declare class UnitType implements IUnitType {
     speed: number;
     cargoCapacity: number;
     trainingTime: number;
-    foodConsumption: number;
-    currencyConsumption: number;
+    cost: Cost[];
     isValid(): Promise<ValidationError[]>;
     constructor(values?: any);
 }

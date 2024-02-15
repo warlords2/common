@@ -1,5 +1,6 @@
 import { IUnitType } from "@core";
 import { IsNotEmpty, validate, ValidationError } from "class-validator";
+import { Cost } from "./cost";
 
 export class UnitType implements IUnitType{
     
@@ -20,16 +21,12 @@ export class UnitType implements IUnitType{
 
     @IsNotEmpty()
     cargoCapacity: number;
-    
+
     @IsNotEmpty()
     trainingTime: number;
 
     @IsNotEmpty()
-    foodConsumption: number;
-
-    @IsNotEmpty()
-    currencyConsumption: number;
-
+    cost: Cost[];
 
     isValid(): Promise<ValidationError[]>{
 
