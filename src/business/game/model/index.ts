@@ -8,11 +8,8 @@ export { Offer } from './market/offer';
 export { Sale } from './market/sale';
 export { Transaction } from './market/transaction';
 
-// scale's
-export { BuildingScale } from './scale/building.scale.production';
-export { ProvinceScale } from './scale/province.scale.production';
-export { ResourceScale } from './scale/resource.scale.production';
-export { Scale } from './scale/scale.production';
+export { BuildingType } from "./buildingType";
+export { ResourceType } from "./resourceType";
 
 // model's
 export { Building } from './building';

@@ -1,1 +1,1 @@
-{"version":3,"file":"npc_type.js","sourceRoot":"","sources":["../../../../../src/core/game/model/enum/npc_type.ts"],"names":[],"mappings":";;;AACA,IAAY,OAGX;AAHD,WAAY,OAAO;IACf,oBAAkB,CAAA;IAClB,4BAAsB,CAAA;AAC1B,CAAC,EAHW,OAAO,GAAP,eAAO,KAAP,eAAO,QAGlB"}
+{"version":3,"file":"npc_type.js","sourceRoot":"","sources":["../../../../../src/core/game/model/enum/npc_type.ts"],"names":[],"mappings":";;;AAAA,IAAY,OAIX;AAJD,WAAY,OAAO;IACf,oBAAkB,CAAA;IAClB,0BAAqB,CAAA;IACrB,4BAAsB,CAAA;AAC1B,CAAC,EAJW,OAAO,GAAP,eAAO,KAAP,eAAO,QAIlB"}

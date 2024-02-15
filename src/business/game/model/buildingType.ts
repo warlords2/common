@@ -2,6 +2,7 @@ import { IBuildingType, IResourceType } from "@core";
 import { IsNotEmpty, validate, ValidationError } from "class-validator";
 import { Size } from "./geometry/size";
 import { ResourceType } from "./resourceType";
+import { UnitType } from "./unitType";
 
 export class BuildingType implements IBuildingType{
 
@@ -15,6 +16,11 @@ export class BuildingType implements IBuildingType{
     multiplier: number;
     multiplier_cost: number;
     initial: number;
+
+    hasUnitGenerate: boolean;
+    multiplier_unit_cost: number;
+    multiplier_unit_time: number;
+    unitsGenerate: UnitType[];
 
     resources: ResourceType[];
     cost: ResourceType[];

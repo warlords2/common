@@ -9,9 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Scale = void 0;
+exports.UnitType = void 0;
 const class_validator_1 = require("class-validator");
-class Scale {
+class UnitType {
     isValid() {
         let groups = undefined;
         let isValid = (0, class_validator_1.validate)(this, { groups, validationError: { target: false } });
@@ -26,18 +26,39 @@ class Scale {
 }
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
-], Scale.prototype, "max_level", void 0);
+    __metadata("design:type", String)
+], UnitType.prototype, "name", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
-], Scale.prototype, "multiplier", void 0);
+], UnitType.prototype, "damage", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
-], Scale.prototype, "initial", void 0);
-exports.Scale = Scale;
-//# sourceMappingURL=scale.production.js.map
+], UnitType.prototype, "health", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], UnitType.prototype, "agility", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], UnitType.prototype, "speed", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], UnitType.prototype, "cargoCapacity", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], UnitType.prototype, "trainingTime", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], UnitType.prototype, "foodConsumption", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], UnitType.prototype, "currencyConsumption", void 0);
+exports.UnitType = UnitType;
+//# sourceMappingURL=unitType.js.map

@@ -1,5 +1,5 @@
-import { UnitType } from "./enum/unit_type";
+import { IUnitType } from "./unitType";
 
 export interface IUnit{
-    type: UnitType
+    type: IUnitType
 }

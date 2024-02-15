@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.World = exports.Unit = exports.Resource = exports.Province = exports.Player = exports.Npc = exports.Market = exports.City = exports.Building = exports.Scale = exports.ResourceScale = exports.ProvinceScale = exports.BuildingScale = exports.Transaction = exports.Sale = exports.Offer = exports.Buy = exports.Position = void 0;
+exports.World = exports.Unit = exports.Resource = exports.Province = exports.Player = exports.Npc = exports.Market = exports.City = exports.Building = exports.ResourceType = exports.BuildingType = exports.Transaction = exports.Sale = exports.Offer = exports.Buy = exports.Position = void 0;
 // geometry's
 var position_1 = require("./geometry/position");
 Object.defineProperty(exports, "Position", { enumerable: true, get: function () { return position_1.Position; } });
@@ -13,15 +13,10 @@ var sale_1 = require("./market/sale");
 Object.defineProperty(exports, "Sale", { enumerable: true, get: function () { return sale_1.Sale; } });
 var transaction_1 = require("./market/transaction");
 Object.defineProperty(exports, "Transaction", { enumerable: true, get: function () { return transaction_1.Transaction; } });
-// scale's
-var building_scale_production_1 = require("./scale/building.scale.production");
-Object.defineProperty(exports, "BuildingScale", { enumerable: true, get: function () { return building_scale_production_1.BuildingScale; } });
-var province_scale_production_1 = require("./scale/province.scale.production");
-Object.defineProperty(exports, "ProvinceScale", { enumerable: true, get: function () { return province_scale_production_1.ProvinceScale; } });
-var resource_scale_production_1 = require("./scale/resource.scale.production");
-Object.defineProperty(exports, "ResourceScale", { enumerable: true, get: function () { return resource_scale_production_1.ResourceScale; } });
-var scale_production_1 = require("./scale/scale.production");
-Object.defineProperty(exports, "Scale", { enumerable: true, get: function () { return scale_production_1.Scale; } });
+var buildingType_1 = require("./buildingType");
+Object.defineProperty(exports, "BuildingType", { enumerable: true, get: function () { return buildingType_1.BuildingType; } });
+var resourceType_1 = require("./resourceType");
+Object.defineProperty(exports, "ResourceType", { enumerable: true, get: function () { return resourceType_1.ResourceType; } });
 // model's
 var building_1 = require("./building");
 Object.defineProperty(exports, "Building", { enumerable: true, get: function () { return building_1.Building; } });
