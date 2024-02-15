@@ -1,6 +1,6 @@
-import { ResourceType } from "./enum/resource_type";
+import { IResourceType } from "./resourceType";
 
 export interface IResource{
     amount: number;
-    type: ResourceType;
+    type: IResourceType;
 }

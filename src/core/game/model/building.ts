@@ -1,7 +1,7 @@
-import { BuildingType } from "./enum/building_type";
+import { IBuildingType } from "./buildingType";
 import { IPosition } from "./geometry/position";
 
 export interface IBuilding{
-    type: BuildingType;
+    type: IBuildingType;
     position: IPosition;
 }
