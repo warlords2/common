@@ -1,4 +1,4 @@
-import { IResource, ResourceType } from "@core";
+import { IResource, IResourceType } from "@core";
 import { IsNotEmpty, IsNumber, validate, ValidationError } from "class-validator";
 
 import { Column } from "typeorm";
@@ -10,7 +10,7 @@ export class Resource implements IResource{
     amount: number;
 
     @Column()
-    type: ResourceType;
+    type: IResourceType;
 
     isValid(): Promise<ValidationError[]>{
 

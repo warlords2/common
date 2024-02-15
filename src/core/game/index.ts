@@ -4,4 +4,4 @@ export {province_scale_default} from './model';
 
 
 // models
-export *  from './model';
+export * from './model';

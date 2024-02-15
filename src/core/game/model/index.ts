@@ -26,12 +26,14 @@ export { IResourceScale } from './scale/resource.scale.production';
 export { IScale } from './scale/scale.production';
 
 // model's
+export { IBuildingType } from './buildingType';
 export { IBuilding } from './building';
 export { ICity } from './city';
 export { IMarket } from './market';
 export { INpc } from './npc';
 export { IPlayer } from './player';
 export { IProvince } from './province';
+export { IResourceType } from './resourceType';
 export { IResource } from './resource';
 export { IUnit } from './unit';
 export { IWorld } from './world';

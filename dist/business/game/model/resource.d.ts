@@ -1,8 +1,8 @@
-import { IResource, ResourceType } from "../../../core/index.js";
+import { IResource, IResourceType } from "../../../core/index.js";
 import { ValidationError } from "class-validator";
 export declare class Resource implements IResource {
     amount: number;
-    type: ResourceType;
+    type: IResourceType;
     isValid(): Promise<ValidationError[]>;
     constructor(values?: any);
 }
