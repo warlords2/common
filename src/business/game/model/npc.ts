@@ -1,10 +1,15 @@
 import { INpc, NpcType } from "@core";
 import { IsNotEmpty, validate, ValidationError } from "class-validator";
+import { City } from "./city";
+import { World } from "./world";
 
 export class Npc implements INpc{
     @IsNotEmpty()
     name: String;
+
     type: NpcType;
+    cities: City[];
+    world: World;
 
     isValid(): Promise<ValidationError[]>{
 
