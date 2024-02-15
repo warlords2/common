@@ -2,12 +2,18 @@ import { IProvince } from "@core";
 import { IsNotEmpty, validate, ValidationError } from "class-validator";
 import { City } from "./city";
 import { Position } from "./geometry/position";
+import { Size } from "./geometry/size";
 
 export class Province implements IProvince{
     @IsNotEmpty()
     name: String;
+    
     @IsNotEmpty()
     position: Position;
+    
+    @IsNotEmpty()
+    size: Size;
+
     cities: City[];
 
     isValid(): Promise<ValidationError[]>{

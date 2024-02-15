@@ -13,6 +13,7 @@ exports.City = void 0;
 const class_validator_1 = require("class-validator");
 const position_1 = require("./geometry/position");
 const npc_1 = require("./npc");
+const size_1 = require("./geometry/size");
 class City {
     isValid() {
         let groups = undefined;
@@ -38,5 +39,9 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", position_1.Position)
 ], City.prototype, "position", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", size_1.Size)
+], City.prototype, "size", void 0);
 exports.City = City;
 //# sourceMappingURL=city.js.map

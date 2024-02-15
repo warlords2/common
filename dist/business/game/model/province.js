@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Province = void 0;
 const class_validator_1 = require("class-validator");
 const position_1 = require("./geometry/position");
+const size_1 = require("./geometry/size");
 class Province {
     isValid() {
         let groups = undefined;
@@ -33,5 +34,9 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", position_1.Position)
 ], Province.prototype, "position", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", size_1.Size)
+], Province.prototype, "size", void 0);
 exports.Province = Province;
 //# sourceMappingURL=province.js.map

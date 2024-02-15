@@ -4,14 +4,21 @@ import { Building } from "./building";
 import { Position } from "./geometry/position";
 import { Npc } from "./npc";
 import { Resource } from "./resource";
+import { Size } from "./geometry/size";
 
 export class City implements ICity{
     @IsNotEmpty()
     name: String;
+
     @IsNotEmpty()
     owner: Npc;
+
     @IsNotEmpty()
     position: Position;
+    
+    @IsNotEmpty()
+    size: Size;
+
     buildings: Building[];
     resources: Resource[];
 
