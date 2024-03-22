@@ -1,3 +1,5 @@
+import { IWorld } from "./world";
+
 export interface IResourceType{
     name: String;
 
@@ -7,4 +9,5 @@ export interface IResourceType{
 
     fixed: boolean;
 
+    world: IWorld;
 }
