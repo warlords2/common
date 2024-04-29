@@ -16,15 +16,15 @@
   },
   "author": "gil",
   "dependencies": {
-    "class-validator": "^0.14.0",
-    "dotenv": "^16.0.3"
+    "class-validator": "0.14.0",
+    "dotenv": "16.0.3"
   },
   "devDependencies": {
     "@types/node": "18.15.3",
     "nodemon": "2.0.21",
     "rimraf": "4.4.0",
     "ts-node": "10.9.1",
-    "tsc-alias": "^1.8.5",
+    "tsc-alias": "1.8.5",
     "typescript": "5.0.2"
   }
 }
