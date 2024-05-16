@@ -1,5 +1,5 @@
 [
-    // Nao se esqueça de re genrar os uuid so use esses id aqui para vincualr no json , pois se o admin criar dois mundos com o memso apdrao ja era
+    
     {
         "id": "c0f06c62-d6a5-426b-a682-11efae6f5e14",
         "name":"Prime",
@@ -518,7 +518,22 @@
                 ]
             }
         ],
-        
+        "provinceConfig":{
+            "limitCity": 8,
+            "genereteProvince": true,
+            "example":[
+                {
+                    
+                }
+            ],
+            "cityConfig":{
+                "example":[
+                    {
+                        
+                    }
+                ]
+        }
+        },
         "provinces": [
             {
                 "id": "f6a50780-f701-416f-86e6-fe5ff29df3ac",
