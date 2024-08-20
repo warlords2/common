@@ -523,16 +523,27 @@
             "genereteProvince": true,
             "example":[
                 {
-                    
+                    name: String;
+                    size: ISize;
+                    position: IPosition;
+                    world: IWorld;
+                    cities: ICity[];
                 }
             ],
             "cityConfig":{
                 "example":[
                     {
-                        
+                        name: String;
+                        stability: number;
+                        owner: INpc;
+                        size: ISize;
+                        province: IProvince;
+                        position: IPosition;
+                        buildings: IBuilding[];
+                        resources: IResource[];
                     }
                 ]
-        }
+            }
         },
         "provinces": [
             {
