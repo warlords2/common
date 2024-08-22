@@ -2,7 +2,7 @@ import { IBuildingType } from "./buildingType";
 import { IPosition } from "./geometry/position";
 
 export interface IBuilding{
-    type: IBuildingType;
+    buildingType: IBuildingType;
     position: IPosition;
     level: number;
 }

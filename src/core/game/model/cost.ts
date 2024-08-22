@@ -1,7 +1,7 @@
 import { IResourceType } from "./resourceType";
 
 export interface ICost {
-    resource: IResourceType;
+    resourceType: IResourceType;
     amount: number;
     fixed: boolean;
 }

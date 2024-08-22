@@ -2,10 +2,13 @@ import { IWorld } from "./world";
 
 export interface IResourceType{
     name: String;
-
-    max_level: number;
+    
+    hasMaxLevel: boolean;
+    maxLevel: number;
     multiplier: number;
     initial: number;
+    
+    noMarket:boolean;
 
     fixed: boolean;
 

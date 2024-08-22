@@ -1,5 +1,7 @@
 export enum NpcType{
-    Ai          = "ai",
-    Admin       = "admin",
-    Player      = "player"
+    Ai              = "ai",
+    AiCommercial    = "ai_commercial",
+    AiMilitar       = "ai_militar",
+    Admin           = "admin",
+    Player          = "player"
 }

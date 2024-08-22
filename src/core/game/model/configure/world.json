@@ -1,729 +1,829 @@
 [
-    
     {
-        "id": "c0f06c62-d6a5-426b-a682-11efae6f5e14",
-        "name":"Prime",
-        "market":{
+        "name":"Basic",
+        "hasLimitUser": false,
+        "limitUser": 0,
+
+        "hasMaxTimeInHours": false,
+        "maxTimeInHours": 0,
+
+        "hasCityForVitory": false,
+        "cityForVitory": 0,
+
+        "marketConfig":{
+            "name": "Basic",
             "txPercentage": 10,
-            "offers":[],
-            "sales": []
-        },
-        "resourceType": [
-            {
-                "id": "cd0a06f6-e3c6-4b2e-b27c-1aab6e2ac847",
-                "name": "wood",
-                "max_level": 10,
-                "multiplier": 20,
-                "initial": "200",
-                "fixed": false
-            },
-            {
-                "id": "ca6dc2d2-5ba8-4eda-94e7-5aa17929c36e",
-                "name": "iron",
-                "max_level": 10,
-                "multiplier": 20,
-                "initial": "200",
-                "fixed": false
-            },
-            {
-                "id": "ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247",
-                "name": "gold",
-                "max_level": 10,
-                "multiplier": 20,
-                "initial": "200",
-                "fixed": false
-            },
-            {
-                "id": "yt0a06f6-e3c6-4b2e-b27c-1aab6e2ac247",
-                "name": "food",
-                "max_level": 10,
-                "multiplier": 20,
-                "initial": "200",
-                "fixed": false
-            },
-            {
-                "id": "51370876-4066-44e3-8998-d3c4bfe956ed",
-                "name": "Pop",
-                "max_level": 10,
-                "multiplier": 20,
-                "initial": "200",
-                "fixed": true
-            }
-        ],
-        "unitType": [
-            {
-                "name": "lancer",
-                "damage": 10,
-                "health": 40,
-                "agility": 5,
-                "range": 1,
-                "txRevive": 20,
-
-                "speed": 1,
-                "cargoCapacity": 100,
-                "trainingTime": 580000,
-
-                "cost": [
-                    {
-                        "resource": {
-                            "id":"cd0a06f6-e3c6-4b2e-b27c-1aab6e2ac847"
-                        },
-                        "amount": 200,
-                        "fixed": false
-                    },
-                    {
-                        "resource": {
-                            "id":"ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    },
-                    {
-                        "resource": {
-                            "id":"yt0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                        },
-                        "amount": 200,
-                        "fixed": true
-                    }
-                ]
-            }
-        ],
-        "buildingType": [
             
-            {
-                "id": "75849a08-553b-408a-9a19-511df16dcffb",
-                "name": "prefecture",
-                "size": {
-                    "height": 2,
-                    "width": 2,
-                    "weight": 1
-                },
-                "max_level": 10,
-                "multiplier": 1.3,
-                "multiplier_cost": 1.2,
-                "initial": 1,
+            "hasOffersForPlayer": false,
+            "maxOffersForPlayer": 0,
 
-                "hasUnitGenerate": false,
-                "multiplier_unit_cost": 0,
-                "multiplier_unit_time": 0,
-                "unitsGenerate": [],
+            "hasMaxOffersForCity": false,
+            "maxOffersForCity": 0,
 
-                "hasStore": true,
-                "storeAmount": 2000,
-                "multiplier_storage": 1.2,
+            "limitedTimeOffers": true,
+            "limitTimeOffersInHours": 168,
 
-                "reciveDamage": true,
-                "txRevive": 1,
-                "damage": 1,
-                "health": 10,
-                "agility": 0,
-                "range": 1,
-                "multiplier_damage": 0,
-                "multiplier_health": 0,
-                "multiplier_agility": 0,
-                "multiplier_range": 0,
+            "limitedDistanceTrade": false,
+            "limitDistanceTrade": 0,
 
-                "resources": [
-                    {
-                        "id":"51370876-4066-44e3-8998-d3c4bfe956ed"
-                    },
-                    {
-                        "id":"ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                    }
-                ],
-                "cost": [
-                    {
-                        "resource": {
-                            "id":"cd0a06f6-e3c6-4b2e-b27c-1aab6e2ac847"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    },
-                    {
-                        "resource": {
-                            "id":"ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    }
-                ]
-            },
-
-            {
-                "id": "8fd6e6e2-f7e8-439f-8c93-20ec525a96a8",
-                "name": "sawmill",
-                "size": {
-                    "height": 2,
-                    "width": 2,
-                    "weight": 1
-                },
-                "max_level": 10,
-                "multiplier": 1.3,
-                "multiplier_cost": 1.2,
-                "initial": 1,
-
-                "hasUnitGenerate": false,
-                "multiplier_unit_cost": 0,
-                "multiplier_unit_time": 0,
-                "unitsGenerate": [],
-
-                "hasStore": true,
-                "storeAmount": 200,
-                "multiplier_storage": 1.2,
-
-                "reciveDamage": false,
-                "txRevive": 0,
-                "damage": 0,
-                "health": 0,
-                "agility": 0,
-                "range": 0,
-                "multiplier_damage": 0,
-                "multiplier_health": 0,
-                "multiplier_agility": 0,
-                "multiplier_range": 0,
-
-                "resources": [
-                    {
-                        "id":"cd0a06f6-e3c6-4b2e-b27c-1aab6e2ac847"
-                    }
-                ],
-                "cost": [
-                    {
-                        "resource": {
-                            "id":"cd0a06f6-e3c6-4b2e-b27c-1aab6e2ac847"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    },
-                    {
-                        "resource": {
-                            "id":"ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    }
-                ]
-            },
-
-            {
-                "id": "6191d1df-cd5c-4194-aa8e-2efa0a8edaa2",
-                "name": "farm",
-                "size": {
-                    "height": 2,
-                    "width": 2,
-                    "weight": 1
-                },
-                "max_level": 10,
-                "multiplier": 1.3,
-                "multiplier_cost": 1.2,
-                "initial": 1,
-
-                "hasUnitGenerate": false,
-                "multiplier_unit_cost": 0,
-                "multiplier_unit_time": 0,
-                "unitsGenerate": [],
-
-                "hasStore": true,
-                "storeAmount": 200,
-                "multiplier_storage": 1.2,
-
-                "reciveDamage": false,
-                "txRevive": 0,
-                "damage": 0,
-                "health": 0,
-                "agility": 0,
-                "range": 0,
-                "multiplier_damage": 0,
-                "multiplier_health": 0,
-                "multiplier_agility": 0,
-                "multiplier_range": 0,
-
-                "resources": [
-                    {
-                        "id":"yt0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                    }
-                ],
-                "cost": [
-                    {
-                        "resource": {
-                            "id":"cd0a06f6-e3c6-4b2e-b27c-1aab6e2ac847"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    },
-                    {
-                        "resource": {
-                            "id":"ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    }
-                ]
-            },
-
-            {
-                "id": "8be2c7f8-6bde-4f4b-b26a-494fc2b9aa27",
-                "name": "bank",
-                "size": {
-                    "height": 2,
-                    "width": 2,
-                    "weight": 1
-                },
-                "max_level": 10,
-                "multiplier": 1.3,
-                "multiplier_cost": 1.2,
-                "initial": 1,
-
-                "hasUnitGenerate": false,
-                "multiplier_unit_cost": 0,
-                "multiplier_unit_time": 0,
-                "unitsGenerate": [],
-
-                "hasStore": true,
-                "storeAmount": 200,
-                "multiplier_storage": 1.2,
-
-                "reciveDamage": false,
-                "txRevive": 0,
-                "damage": 0,
-                "health": 0,
-                "agility": 0,
-                "range": 0,
-                "multiplier_damage": 0,
-                "multiplier_health": 0,
-                "multiplier_agility": 0,
-                "multiplier_range": 0,
-
-                "resources": [
-                    {
-                        "id":"ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                    }
-                ],
-                "cost": [
-                    {
-                        "resource": {
-                            "id":"cd0a06f6-e3c6-4b2e-b27c-1aab6e2ac847"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    },
-                    {
-                        "resource": {
-                            "id":"ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    }
-                ]
-            },
-
-            {
-                "id": "3aefeb26-672d-4ef0-abf2-315784a440c5",
-                "name": "house",
-                "size": {
-                    "height": 2,
-                    "width": 2,
-                    "weight": 1
-                },
-                "max_level": 10,
-                "multiplier": 1.3,
-                "multiplier_cost": 1.2,
-                "initial": 1,
-
-                "hasUnitGenerate": false,
-                "multiplier_unit_cost": 0,
-                "multiplier_unit_time": 0,
-                "unitsGenerate": [],
-
-                "hasStore": true,
-                "storeAmount": 200,
-                "multiplier_storage": 1.2,
-
-                "reciveDamage": false,
-                "txRevive": 0,
-                "damage": 0,
-                "health": 0,
-                "agility": 0,
-                "range": 0,
-                "multiplier_damage": 0,
-                "multiplier_health": 0,
-                "multiplier_agility": 0,
-                "multiplier_range": 0,
-
-                "resources": [
-                    {
-                        "id":"51370876-4066-44e3-8998-d3c4bfe956ed"
-                    }
-                ],
-                "cost": [
-                    {
-                        "resource": {
-                            "id":"cd0a06f6-e3c6-4b2e-b27c-1aab6e2ac847"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    },
-                    {
-                        "resource": {
-                            "id":"ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    }
-                ]
-            },
-
-            {
-                "id": "3d303ad2-2bb5-4f41-861a-bff5429aae9c",
-                "name": "foundry",
-                "size": {
-                    "height": 2,
-                    "width": 2,
-                    "weight": 1
-                },
-                "max_level": 10,
-                "multiplier": 1.3,
-                "multiplier_cost": 1.2,
-                "initial": 1,
-
-                "hasUnitGenerate": false,
-                "multiplier_unit_cost": 0,
-                "multiplier_unit_time": 0,
-                "unitsGenerate": [],
-
-                "hasStore": true,
-                "storeAmount": 200,
-                "multiplier_storage": 1.2,
-
-                "reciveDamage": false,
-                "txRevive": 0,
-                "damage": 0,
-                "health": 0,
-                "agility": 0,
-                "range": 0,
-                "multiplier_damage": 0,
-                "multiplier_health": 0,
-                "multiplier_agility": 0,
-                "multiplier_range": 0,
-
-                "resources": [
-                    {
-                        "id":"ca6dc2d2-5ba8-4eda-94e7-5aa17929c36e"
-                    }
-                ],
-                "cost": [
-                    {
-                        "resource": {
-                            "id":"cd0a06f6-e3c6-4b2e-b27c-1aab6e2ac847"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    },
-                    {
-                        "resource": {
-                            "id":"ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    }
-                ]
-            },
-
-            {
-                "id": "e9bfb077-96f4-48aa-96d5-6fa4cae22ac0",
-                "name": "wall",
-                "size": {
-                    "height": 2,
-                    "width": 2,
-                    "weight": 1
-                },
-                "max_level": 1,
-                "multiplier": 0,
-                "multiplier_cost": 0,
-                "initial": 1,
-
-                "hasUnitGenerate": false,
-                "multiplier_unit_cost": 0,
-                "multiplier_unit_time": 0,
-                "unitsGenerate": [],
-
-                "hasStore": false,
-                "storeAmount": 0,
-                "multiplier_storage": 0,
-
-                "reciveDamage": true,
-                "txRevive": 0.3,
-                "damage": 1,
-                "health": 80,
-                "agility": 0,
-                "range": 1,
-                "multiplier_damage": 0,
-                "multiplier_health": 0,
-                "multiplier_agility": 0,
-                "multiplier_range": 0,
-
-                "resources": [],
-                "cost": []
-            },
-
-            {
-                "id": "dfbace43-aa26-48f8-a2c9-0f62ee8a9760",
-                "name": "tower",
-                "size": {
-                    "height": 2,
-                    "width": 2,
-                    "weight": 1
-                },
-                "max_level": 1,
-                "multiplier": 0,
-                "multiplier_cost": 0,
-                "initial": 1,
-
-                "hasUnitGenerate": false,
-                "multiplier_unit_cost": 0,
-                "multiplier_unit_time": 0,
-                "unitsGenerate": [],
-
-                "hasStore": false,
-                "storeAmount": 0,
-                "multiplier_storage": 0,
-
-                "reciveDamage": true,
-                "txRevive": 0.6,
-                "damage": 5,
-                "health": 90,
-                "agility": 10,
-                "range": 8,
-                "multiplier_damage": 0,
-                "multiplier_health": 0,
-                "multiplier_agility": 0,
-                "multiplier_range": 0,
-
-                "resources": [],
-                "cost": [
-                    {
-                        "resource": {
-                            "id":"cd0a06f6-e3c6-4b2e-b27c-1aab6e2ac847"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    },
-                    {
-                        "resource": {
-                            "id":"ed0a06f6-e3c6-4b2e-b27c-1aab6e2ac247"
-                        },
-                        "amount": 50,
-                        "fixed": false
-                    }
-                ]
-            }
-        ],
-        "provinceConfig":{
-            "limitCity": 8,
-            "genereteProvince": true,
-            "example":[
+            "limitedProvinceSaltTrade": false,
+            "limitProvinceSaltTrade": 0,
+            
+            "examples":[
                 {
-                    name: String;
-                    size: ISize;
-                    position: IPosition;
-                    world: IWorld;
-                    cities: ICity[];
+                    "name": "Basic limited distance 9000xDistance",
+                    "txPercentage": 10,
+                    
+                    "hasOffersForPlayer": false,
+                    "maxOffersForPlayer": 0,
+
+                    "hasMaxOffersForCity": false,
+                    "maxOffersForCity": 0,
+
+                    "limitedTimeOffers": true,
+                    "limitTimeOffersInHours": 168,
+
+                    "limitedDistanceTrade": true,
+                    "limitDistanceTrade": 9000,
+
+                    "limitedProvinceSaltTrade": false,
+                    "limitProvinceSaltTrade": 0
+                },
+                {
+                    "name": "Basic limited Salt inter Province 3xSalt",
+                    "txPercentage": 10,
+                    
+                    "hasOffersForPlayer": false,
+                    "maxOffersForPlayer": 0,
+
+                    "hasMaxOffersForCity": false,
+                    "maxOffersForCity": 0,
+
+                    "limitedTimeOffers": true,
+                    "limitTimeOffersInHours": 168,
+
+                    "limitedDistanceTrade": false,
+                    "limitDistanceTrade": 0,
+
+                    "limitedProvinceSaltTrade": true,
+                    "limitProvinceSaltTrade": 3
+                }
+            ]
+        },
+        "resourceConfig":{
+            "name": "Basic wood/metal/food/pop",
+            "resourcesType":[
+                {
+                    "name": "wood",
+                    "hasMaxLevel": false,
+                    "maxLevel": 0,
+                    "multiplier": 1,
+                    "initial": 10,
+                    "noMarket": false,
+                    "fixed": false
+                },
+                {
+                    "name": "metal",
+                    "hasMaxLevel": false,
+                    "maxLevel": 0,
+                    "multiplier": 1,
+                    "initial": 10,
+                    "noMarket": false,
+                    "fixed": false
+                },
+                {
+                    "name": "pop",
+                    "hasMaxLevel": false,
+                    "maxLevel": 0,
+                    "multiplier": 1,
+                    "initial": 10,
+                    "noMarket": true,
+                    "fixed": true
+                },
+                {
+                    "name": "food",
+                    "hasMaxLevel": false,
+                    "maxLevel": 0,
+                    "multiplier": 1,
+                    "initial": 10,
+                    "noMarket": false,
+                    "fixed": false
                 }
             ],
-            "cityConfig":{
-                "example":[
-                    {
-                        name: String;
-                        stability: number;
-                        owner: INpc;
-                        size: ISize;
-                        province: IProvince;
-                        position: IPosition;
-                        buildings: IBuilding[];
-                        resources: IResource[];
-                    }
-                ]
-            }
+            "examples":[
+                {
+                    "name": "Basic wood/metal/food/pop Buffed resources 30%",
+                    "resourcesType":[
+                        {
+                            "name": "wood",
+                            "hasMaxLevel": false,
+                            "maxLevel": 0,
+                            "multiplier": 30,
+                            "initial": 1,
+                            "noMarket": false,
+                            "fixed": false
+                        },
+                        {
+                            "name": "metal",
+                            "hasMaxLevel": false,
+                            "maxLevel": 0,
+                            "multiplier": 30,
+                            "initial": 1,
+                            "noMarket": false,
+                            "fixed": false
+                        },
+                        {
+                            "name": "pop",
+                            "hasMaxLevel": false,
+                            "maxLevel": 0,
+                            "multiplier": 30,
+                            "initial": 1,
+                            "noMarket": true,
+                            "fixed": true
+                        },
+                        {
+                            "name": "food",
+                            "hasMaxLevel": false,
+                            "maxLevel": 0,
+                            "multiplier": 30,
+                            "initial": 1,
+                            "noMarket": false,
+                            "fixed": false
+                        }
+                    ]
+                }
+            ]
         },
-        "provinces": [
-            {
-                "id": "f6a50780-f701-416f-86e6-fe5ff29df3ac",
-                "name": "Andor",
-                "size": {
-                    "height": 10,
-                    "width": 10,
+        "unitConfig":{
+            "name": "Basic",
+            "healthInExternalProvincePercentage": 60,
+            "damageInExternalProvincePercentage": 60,
+            "txReviveInExternalProvincePercentage": 60,
+            "agilityInExternalProvincePercentage": 60,
+            "rangeInExternalProvincePercentage": 60,
+            "speedInExternalProvincePercentage": 60,
+            "unitsType":[
+                {
+                    "name": "infantary",
+                    "damage": 10,
+                    "health": 30,
+                    "agility": 1,
+                    "range": 1,
+                    "txRevivePercentage": 30,
+                    "speed": 10,
+                    "cargoCapacity": 10,
+                    "trainingTimeInHours": 0.01,
+                    "cost": [
+                        {
+                            "resourceType": { "name": "wood" },
+                            "amount": 10,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "metal" },
+                            "amount": 10,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "pop" },
+                            "amount": 1,
+                            "fixed": true
+                        },
+                        {
+                            "resourceType": { "name": "food" },
+                            "amount": 1,
+                            "fixed": true
+                        }
+                    ]
+                },
+                {
+                    "name": "archer",
+                    "damage": 10,
+                    "health": 15,
+                    "agility": 1,
+                    "range": 10,
+                    "txRevivePercentage": 30,
+                    "speed": 20,
+                    "cargoCapacity": 10,
+                    "trainingTimeInHours": 0.01,
+                    "cost": [
+                        {
+                            "resourceType": { "name": "wood" },
+                            "amount": 12,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "metal" },
+                            "amount": 5,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "pop" },
+                            "amount": 1,
+                            "fixed": true
+                        },
+                        {
+                            "resourceType": { "name": "food" },
+                            "amount": 1,
+                            "fixed": true
+                        }
+                    ]
+                }
+            ],
+            "examples":[]
+        },
+        "buildingConfig":{
+            "name": "Basic",
+            "buildingsType":[
+                {
+                    "name": "carpentry",
+                    "size": {
+                        "height": 2,
+                        "width": 2,
+                        "weight": 1
+                    },
+                    "hasMaxLevel": true,
+                    "maxLevel": 10,
+                    "initial": 1,
+
+                    "hasUnitGenerate": false,
+                    "multiplierUnitCost": 0,
+                    "multiplierUnitTime": 0,
+                    "unitsGenerate": [],
+
+                    "hasStore": true,
+                    "storeAmount": 500,
+                    "multiplierStorage": 1,
+
+                    "hasMarket": false,
+                    "initialMaxOffers": 0,
+                    "multiplierMaxOffers": 0,
+
+                    "receiveDamage": false,
+                    "txRevive": 0,
+                    "damage": 0,
+                    "health": 0,
+                    "agility": 0,
+                    "range": 0,
+                    "multiplierDamage": 0,
+                    "multiplierHealth": 0,
+                    "multiplierAgility": 0,
+                    "multiplierRange": 0,
+
+                    "multiplierResources": 1.8,
+                    "resources":[
+                        { "name": "wood" }
+                    ],
+                    "multiplierCost": 1.5,
+                    "cost":[
+                        {
+                            "resourceType": { "name": "wood" },
+                            "amount": 20,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "metal" },
+                            "amount": 10,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "pop" },
+                            "amount": 2,
+                            "fixed": true
+                        },
+                        {
+                            "resourceType": { "name": "food" },
+                            "amount": 2,
+                            "fixed": true
+                        }
+                    ]
+                },
+                {
+                    "name": "mine",
+                    "size": {
+                        "height": 2,
+                        "width": 2,
+                        "weight": 1
+                    },
+                    "hasMaxLevel": true,
+                    "maxLevel": 10,
+                    "initial": 1,
+
+                    "hasUnitGenerate": false,
+                    "multiplierUnitCost": 0,
+                    "multiplierUnitTime": 0,
+                    "unitsGenerate": [],
+
+                    "hasStore": true,
+                    "storeAmount": 500,
+                    "multiplierStorage": 1,
+
+                    "hasMarket": false,
+                    "initialMaxOffers": 0,
+                    "multiplierMaxOffers": 0,
+
+                    "receiveDamage": false,
+                    "txRevive": 0,
+                    "damage": 0,
+                    "health": 0,
+                    "agility": 0,
+                    "range": 0,
+                    "multiplierDamage": 0,
+                    "multiplierHealth": 0,
+                    "multiplierAgility": 0,
+                    "multiplierRange": 0,
+
+                    "multiplierResources": 1.8,
+                    "resources":[
+                        { "name": "metal" }
+                    ],
+                    "multiplierCost": 1.5,
+                    "cost":[
+                        {
+                            "resourceType": { "name": "wood" },
+                            "amount": 10,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "metal" },
+                            "amount": 20,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "pop" },
+                            "amount": 2,
+                            "fixed": true
+                        },
+                        {
+                            "resourceType": { "name": "food" },
+                            "amount": 2,
+                            "fixed": true
+                        }
+                    ]
+                },
+                {
+                    "name": "farm",
+                    "size": {
+                        "height": 2,
+                        "width": 2,
+                        "weight": 1
+                    },
+                    "hasMaxLevel": true,
+                    "maxLevel": 10,
+                    "initial": 1,
+
+                    "hasUnitGenerate": false,
+                    "multiplierUnitCost": 0,
+                    "multiplierUnitTime": 0,
+                    "unitsGenerate": [],
+
+                    "hasStore": true,
+                    "storeAmount": 500,
+                    "multiplierStorage": 1,
+
+                    "hasMarket": false,
+                    "initialMaxOffers": 0,
+                    "multiplierMaxOffers": 0,
+
+                    "receiveDamage": false,
+                    "txRevive": 0,
+                    "damage": 0,
+                    "health": 0,
+                    "agility": 0,
+                    "range": 0,
+                    "multiplierDamage": 0,
+                    "multiplierHealth": 0,
+                    "multiplierAgility": 0,
+                    "multiplierRange": 0,
+
+                    "multiplierResources": 1.8,
+                    "resources":[
+                        { "name": "food" }
+                    ],
+                    "multiplierCost": 1.5,
+                    "cost":[
+                        {
+                            "resourceType": { "name": "wood" },
+                            "amount": 10,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "metal" },
+                            "amount": 5,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "pop" },
+                            "amount": 2,
+                            "fixed": true
+                        },
+                        {
+                            "resourceType": { "name": "food" },
+                            "amount": 2,
+                            "fixed": true
+                        }
+                    ]
+                },
+                {
+                    "name": "house",
+                    "size": {
+                        "height": 2,
+                        "width": 2,
+                        "weight": 1
+                    },
+                    "hasMaxLevel": true,
+                    "maxLevel": 10,
+                    "initial": 1,
+
+                    "hasUnitGenerate": false,
+                    "multiplierUnitCost": 0,
+                    "multiplierUnitTime": 0,
+                    "unitsGenerate": [],
+
+                    "hasStore": true,
+                    "storeAmount": 500,
+                    "multiplierStorage": 1,
+
+                    "hasMarket": false,
+                    "initialMaxOffers": 0,
+                    "multiplierMaxOffers": 0,
+
+                    "receiveDamage": false,
+                    "txRevive": 0,
+                    "damage": 0,
+                    "health": 0,
+                    "agility": 0,
+                    "range": 0,
+                    "multiplierDamage": 0,
+                    "multiplierHealth": 0,
+                    "multiplierAgility": 0,
+                    "multiplierRange": 0,
+
+                    "multiplierResources": 1.8,
+                    "resources":[
+                        { "name": "pop" }
+                    ],
+                    "multiplierCost": 1.5,
+                    "cost":[
+                        {
+                            "resourceType": { "name": "wood" },
+                            "amount": 10,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "metal" },
+                            "amount": 5,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "food" },
+                            "amount": 2,
+                            "fixed": true
+                        }
+                    ]
+                },
+                {
+                    "name": "prefecture",
+                    "size": {
+                        "height": 4,
+                        "width": 4,
+                        "weight": 1
+                    },
+                    "hasMaxLevel": true,
+                    "maxLevel": 10,
+                    "initial": 1,
+
+                    "hasUnitGenerate": false,
+                    "multiplierUnitCost": 0,
+                    "multiplierUnitTime": 0,
+                    "unitsGenerate": [],
+
+                    "hasStore": true,
+                    "storeAmount": 500,
+                    "multiplierStorage": 1,
+
+                    "hasMarket": false,
+                    "initialMaxOffers": 0,
+                    "multiplierMaxOffers": 0,
+
+                    "receiveDamage": true,
+                    "txRevive": 100,
+                    "damage": 50,
+                    "health": 100,
+                    "agility": 0,
+                    "range": 100,
+                    "multiplierDamage":     1.6,
+                    "multiplierHealth":     1.6,
+                    "multiplierAgility":    1.6,
+                    "multiplierRange":      1.6,
+
+                    "multiplierResources": 1.8,
+                    "resources":[
+                        { "name": "pop" }
+                    ],
+                    "multiplierCost": 1.5,
+                    "cost":[
+                        {
+                            "resourceType": { "name": "wood" },
+                            "amount": 10,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "metal" },
+                            "amount": 5,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "food" },
+                            "amount": 2,
+                            "fixed": true
+                        }
+                    ]
+                },
+                {
+                    "name": "barracks",
+                    "size": {
+                        "height": 2,
+                        "width": 2,
+                        "weight": 1
+                    },
+                    "hasMaxLevel": true,
+                    "maxLevel": 10,
+                    "initial": 1,
+
+                    "hasUnitGenerate": true,
+                    "multiplierUnitCost": 1.3,
+                    "multiplierUnitTime": 1.8,
+                    "unitsGenerate": [
+                        { "name": "infantary" },
+                        { "name": "archer" }
+                    ],
+
+                    "hasStore": false,
+                    "storeAmount": 0,
+                    "multiplierStorage": 0,
+
+                    "hasMarket": false,
+                    "initialMaxOffers": 0,
+                    "multiplierMaxOffers": 0,
+
+                    "receiveDamage": false,
+                    "txRevive": 0,
+                    "damage": 0,
+                    "health": 0,
+                    "agility": 0,
+                    "range": 0,
+                    "multiplierDamage": 0,
+                    "multiplierHealth": 0,
+                    "multiplierAgility": 0,
+                    "multiplierRange": 0,
+
+                    "multiplierResources": 1.8,
+                    "resources":[],
+
+                    "multiplierCost": 1.5,
+                    "cost":[
+                        {
+                            "resourceType": { "name": "wood" },
+                            "amount": 10,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "metal" },
+                            "amount": 5,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "pop" },
+                            "amount": 2,
+                            "fixed": true
+                        },
+                        {
+                            "resourceType": { "name": "food" },
+                            "amount": 2,
+                            "fixed": true
+                        }
+                    ]
+                },
+                {
+                    "name": "market",
+                    "size": {
+                        "height": 2,
+                        "width": 2,
+                        "weight": 1
+                    },
+                    "hasMaxLevel": true,
+                    "maxLevel": 10,
+                    "initial": 1,
+
+                    "hasUnitGenerate": false,
+                    "multiplierUnitCost": 0,
+                    "multiplierUnitTime": 0,
+                    "unitsGenerate": [],
+
+                    "hasStore": true,
+                    "storeAmount": 1000,
+                    "multiplierStorage": 1.5,
+
+                    "hasMarket": true,
+                    "initialMaxOffers": 4,
+                    "multiplierMaxOffers": 1.5,
+
+                    "receiveDamage": false,
+                    "txRevive": 0,
+                    "damage": 0,
+                    "health": 0,
+                    "agility": 0,
+                    "range": 0,
+                    "multiplierDamage": 0,
+                    "multiplierHealth": 0,
+                    "multiplierAgility": 0,
+                    "multiplierRange": 0,
+
+                    "multiplierResources": 1.8,
+                    "resources":[],
+                    "multiplierCost": 1.5,
+                    "cost":[
+                        {
+                            "resourceType": { "name": "wood" },
+                            "amount": 10,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "metal" },
+                            "amount": 5,
+                            "fixed": false
+                        },
+                        {
+                            "resourceType": { "name": "pop" },
+                            "amount": 2,
+                            "fixed": true
+                        },
+                        {
+                            "resourceType": { "name": "food" },
+                            "amount": 2,
+                            "fixed": true
+                        }
+                    ]
+                }
+            ],
+            "examples":[]
+        },
+        "provinceConfig":{
+            "name": "Basic",
+            "limitCity": 8,
+            "totalNpcsPeerProvince": 4,
+            "genereteProvince": true,
+            "size": {
+                "height": 960,
+                "width": 960,
+                "weight": 1
+            },
+            "cityConfig": {
+                "initialStability": 100,
+                "initialSize":{
+                    "height": 30,
+                    "width": 30,
                     "weight": 1
                 },
-                "position": {
-                    "x": 0,
-                    "y": 0
-                },
-                "cities": [
-                    {
-                        "id": "dc017389-c74b-4703-a290-e36ba8241401",
-                        "name": "Artur",
-                        "stability": 100,
-                        "owner": {
-                            "id": "6210a5f2-7a52-421b-8898-93ac785acdb3"
-                        },
-                        "size": {
-                            "height": 15,
-                            "width": 15,
-                            "weight": 3
-                        },
-                        "position": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "buildings": [
-                            {
-                                "type": {
-                                    "id": "75849a08-553b-408a-9a19-511df16dcffb"
-                                },
-                                "position": {
-                                    "x": 0,
-                                    "y": 0
-                                },
-                                "level": 1
-                            },
-                            
-                            {
-                                "type": {
-                                    "id": "8fd6e6e2-f7e8-439f-8c93-20ec525a96a8"
-                                },
-                                "position": {
-                                    "x": 6,
-                                    "y": 0
-                                },
-                                "level": 1
-                            },
-
-                            {
-                                "type": {
-                                    "id": "6191d1df-cd5c-4194-aa8e-2efa0a8edaa2"
-                                },
-                                "position": {
-                                    "x": -6,
-                                    "y": 0
-                                },
-                                "level": 1
-                            },
-
-                            {
-                                "type": {
-                                    "id": "8be2c7f8-6bde-4f4b-b26a-494fc2b9aa27"
-                                },
-                                "position": {
-                                    "x": 0,
-                                    "y": 6
-                                },
-                                "level": 1
-                            },
-
-                            {
-                                "type": {
-                                    "id": "3aefeb26-672d-4ef0-abf2-315784a440c5"
-                                },
-                                "position": {
-                                    "x": -3,
-                                    "y": 0
-                                },
-                                "level": 1
-                            },
-
-
-                            {
-                                "type": {
-                                    "id": "3aefeb26-672d-4ef0-abf2-315784a440c5"
-                                },
-                                "position": {
-                                    "x": -3,
-                                    "y": 0
-                                },
-                                "level": 1
-                            },
-
-                            {
-                                "type": {
-                                    "id": "3d303ad2-2bb5-4f41-861a-bff5429aae9c"
-                                },
-                                "position": {
-                                    "x": 0,
-                                    "y": -6
-                                },
-                                "level": 1
-                            },
-
-                            {
-                                "type": {
-                                    "id": "dfbace43-aa26-48f8-a2c9-0f62ee8a9760"
-                                },
-                                "position": {
-                                    "x": 0,
-                                    "y": -3
-                                },
-                                "level": 1
-                            },
-
-                            {
-                                "type": {
-                                    "id": "3aefeb26-672d-4ef0-abf2-315784a440c5"
-                                },
-                                "position": {
-                                    "x": 0,
-                                    "y": 3
-                                },
-                                "level": 1
-                            },
-
-                            {
-                                "type": {
-                                    "id": "dfbace43-aa26-48f8-a2c9-0f62ee8a9760"
-                                },
-                                "position": {
-                                    "x": 0,
-                                    "y": 3
-                                },
-                                "level": 1
-                            }
-                            
-                        ],
-                        "resources": [
-                            {
-                                "amount": 1000,
-                                "type": {
-                                    "id": "b5c97743-e263-43f9-bee4-dbdb2428cf48"
-                                }
-                            },
-                            {
-                                "amount": 1000,
-                                "type": {
-                                    "id": "6fedb04e-94ae-4b1f-8874-d0bef74e8e5d"
-                                }
-                            },
-                            {
-                                "amount": 1000,
-                                "type": {
-                                    "id": "8e7a6d89-696a-4bfa-99c4-92044d0dc199"
-                                }
-                            },
-                            {
-                                "amount": 1000,
-                                "type": {
-                                    "id": "ca6dc2d2-5ba8-4eda-94e7-5aa17929c36e"
-                                }
-                            }
-                        ]
+                "initialBuildings": [
+                    {   
+                        "buildingType": { "name": "carpentry" },
+                        "position":{ "x": 0, "y": 0, "z": 1 },
+                        "level": 1
+                    },
+                    {   
+                        "buildingType": { "name": "mine" },
+                        "position":{ "x": 0, "y": 26, "z": 1 },
+                        "level": 1
+                    },
+                    {   
+                        "buildingType": { "name": "farm" },
+                        "position":{ "x": 26, "y": 0, "z": 1 },
+                        "level": 1
+                    },
+                    {   
+                        "buildingType": { "name": "house" },
+                        "position":{ "x": 10, "y": 3, "z": 1 },
+                        "level": 1
+                    },
+                    {   
+                        "buildingType": { "name": "barracks" },
+                        "position":{ "x": 3, "y": 10, "z": 1 },
+                        "level": 1
+                    },
+                    {   
+                        "buildingType": { "name": "market" },
+                        "position":{ "x": 20, "y": 3, "z": 1 },
+                        "level": 1
+                    },
+                    {   
+                        "buildingType": { "name": "prefecture" },
+                        "position":{ "x": 15, "y": 15, "z": 1 },
+                        "level": 1
                     }
-                ]
-            }
-        ],
-        "npcs": [
-            {
-                "id": "6210a5f2-7a52-421b-8898-93ac785acdb3",
-                "name": "Admin",
-                "type": "admin"
-            }
-        ]
+                ],
+                "initialResources": [
+                    {
+                        "amount": 500,
+                        "resourceType":  { "name": "wood" }
+                    },
+                    {
+                        "amount": 500,
+                        "resourceType":  { "name": "metal" }
+                    },
+                    {
+                        "amount": 500,
+                        "resourceType":  { "name": "food" }
+                    }
+                ],
+                "initialUnits": [],
+                "examples": []
+            },
+            "examples": []
+        },
+        "npcConfig":{
+            "name": "Basic",
+            "aggressionLevel": 1,
+            "interactionDistance": 500,
+            "npcTypes": [
+                {
+                    "name": "Neutral Vile",
+                    "npcType": "ai",
+                    "minPeerProvince": 2,
+                    "maxPeerProvince": 3,
+                    "aggressionLevel": 0,
+                    "interactionDistance": 0,
+                    "useMarket": false,
+                    "cityInitial": {
+                        "initialStability": 100,
+                        "initialSize": {
+                            "height": 30,
+                            "width": 30,
+                            "weight": 1
+                        },
+                        "initialBuildings": [
+                            {   
+                                "buildingType": { "name": "carpentry" },
+                                "position":{ "x": 0, "y": 0, "z": 1 },
+                                "level": 1
+                            },
+                            {   
+                                "buildingType": { "name": "mine" },
+                                "position":{ "x": 0, "y": 26, "z": 1 },
+                                "level": 1
+                            },
+                            {   
+                                "buildingType": { "name": "farm" },
+                                "position":{ "x": 26, "y": 0, "z": 1 },
+                                "level": 1
+                            },
+                            {   
+                                "buildingType": { "name": "house" },
+                                "position":{ "x": 10, "y": 3, "z": 1 },
+                                "level": 1
+                            },
+                            {   
+                                "buildingType": { "name": "barracks" },
+                                "position":{ "x": 3, "y": 10, "z": 1 },
+                                "level": 1
+                            },
+                            {   
+                                "buildingType": { "name": "market" },
+                                "position":{ "x": 20, "y": 3, "z": 1 },
+                                "level": 1
+                            },
+                            {   
+                                "buildingType": { "name": "prefecture" },
+                                "position":{ "x": 15, "y": 15, "z": 1 },
+                                "level": 1
+                            }
+                        ],
+                        "initialResources": [
+                            {
+                                "amount": 500,
+                                "resourceType":  { "name": "wood" }
+                            },
+                            {
+                                "amount": 500,
+                                "resourceType":  { "name": "metal" }
+                            },
+                            {
+                                "amount": 500,
+                                "resourceType":  { "name": "food" }
+                            }
+                        ],
+                        "initialUnits": []
+                    }
+                }
+            ],
+            "examples":[]
+        },
+        "playerConfig":{
+            "name": "Basic",
+            "choiceProvince": false,
+            "choiceCityPosition": true,
+            "examples": []
+        }
     }
 ]

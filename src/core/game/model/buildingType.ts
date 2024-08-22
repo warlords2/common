@@ -8,38 +8,47 @@ export interface IBuildingType{
     name: string;
 
     size: ISize;
-    max_level: number;
-    multiplier: number;
-    multiplier_cost: number;
+    hasMaxLevel: boolean;
+    maxLevel: number;
+    
     initial: number;
 
     world: IWorld;
 
     // trops generate
     hasUnitGenerate: boolean;
-    multiplier_unit_cost: number;
-    multiplier_unit_time: number;
+    multiplierUnitCost: number;
+    multiplierUnitTime: number;
     unitsGenerate: IUnitType[];
 
     // warehouse
     hasStore: boolean;
     storeAmount: number;
-    multiplier_storage: number;
+    multiplierStorage: number;
+
+    // market
+    hasMarket: boolean;
+    initialMaxOffers: number;
+    multiplierMaxOffers: number;
 
     //Attack and Life 
-    reciveDamage: boolean;
+    receiveDamage: boolean;
     txRevive: number;
     damage: number;
     health: number;
     agility: number;
     range: number;
-    multiplier_damage: number;
-    multiplier_health: number;
-    multiplier_agility: number;
-    multiplier_range: number;
+    multiplierDamage: number;
+    multiplierHealth: number;
+    multiplierAgility: number;
+    multiplierRange: number;
 
-
+    // @todo colocar um campo sobre a edificação ser removivel ou não
+    
+    multiplierResources: number;
     resources: IResourceType[];
+
+    multiplierCost: number;
     cost: ICost[];
     
 }

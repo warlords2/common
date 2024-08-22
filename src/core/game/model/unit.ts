@@ -1,5 +1,6 @@
 import { IUnitType } from "./unitType";
 
 export interface IUnit{
-    type: IUnitType
+    unitType: IUnitType
+    ammount: number;
 }
