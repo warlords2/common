@@ -3,6 +3,7 @@ import { IsNotEmpty, validate, ValidationError } from "class-validator";
 import { City } from "./city";
 import { Position } from "./geometry/position";
 import { Size } from "./geometry/size";
+import { World } from "./world";
 
 export class Province implements IProvince{
     @IsNotEmpty()
@@ -13,7 +14,8 @@ export class Province implements IProvince{
     
     @IsNotEmpty()
     size: Size;
-
+    
+    world: World;
     cities: City[];
 
     isValid(): Promise<ValidationError[]>{

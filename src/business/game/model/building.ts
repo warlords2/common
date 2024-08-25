@@ -1,16 +1,20 @@
 import { IBuilding } from "@core";
-import { IsNotEmpty, validate, ValidationError } from "class-validator";
+import { IsNotEmpty, IsNumber, isNumber, validate, ValidationError } from "class-validator";
 import { Position } from "./geometry/position";
 import { BuildingType } from "./buildingType";
 
 export class Building implements IBuilding{
     
     @IsNotEmpty()
-    type: BuildingType;
+    buildingType: BuildingType;
 
     @IsNotEmpty()
     position: Position;
 
+    @IsNotEmpty()
+    @IsNumber()
+    level: number;
+    
     isValid(): Promise<ValidationError[]>{
 
       let groups = undefined;

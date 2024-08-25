@@ -21,9 +21,15 @@ export class UnitType implements IUnitType{
 
     @IsNotEmpty()
     cargoCapacity: number;
+    
+    @IsNotEmpty()
+    range: number;
 
     @IsNotEmpty()
-    trainingTime: number;
+    txRevivePercentage: number;
+    
+    @IsNotEmpty()
+    trainingTimeInHours: number;
 
     @IsNotEmpty()
     cost: Cost[];

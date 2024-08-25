@@ -12,5 +12,4 @@ export interface IResourceType{
 
     fixed: boolean;
 
-    world: IWorld;
 }

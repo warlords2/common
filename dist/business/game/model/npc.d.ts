@@ -4,7 +4,7 @@ import { City } from "./city";
 import { World } from "./world";
 export declare class Npc implements INpc {
     name: String;
-    type: NpcType;
+    npcType: NpcType;
     cities: City[];
     world: World;
     isValid(): Promise<ValidationError[]>;

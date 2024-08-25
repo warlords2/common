@@ -7,10 +7,12 @@ export class Npc implements INpc{
     @IsNotEmpty()
     name: String;
 
-    type: NpcType;
+    @IsNotEmpty()
+    npcType: NpcType;
+    
     cities: City[];
     world: World;
-
+    
     isValid(): Promise<ValidationError[]>{
 
       let groups = undefined;

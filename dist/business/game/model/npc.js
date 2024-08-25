@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Npc = void 0;
+const _core_1 = require("../../../core/index.js");
 const class_validator_1 = require("class-validator");
 class Npc {
     isValid() {
@@ -28,5 +29,9 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], Npc.prototype, "name", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], Npc.prototype, "npcType", void 0);
 exports.Npc = Npc;
 //# sourceMappingURL=npc.js.map

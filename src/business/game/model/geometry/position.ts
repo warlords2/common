@@ -11,6 +11,10 @@ export class Position implements IPosition{
     @IsNumber()
     y: number;
 
+    @IsNotEmpty()
+    @IsNumber()
+    z: number;
+
     isValid(): Promise<ValidationError[]>{
 
         let groups = undefined;

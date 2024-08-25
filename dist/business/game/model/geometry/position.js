@@ -34,5 +34,10 @@ __decorate([
     (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
 ], Position.prototype, "y", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Number)
+], Position.prototype, "z", void 0);
 exports.Position = Position;
 //# sourceMappingURL=position.js.map

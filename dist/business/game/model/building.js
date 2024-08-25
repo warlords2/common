@@ -29,10 +29,15 @@ class Building {
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", buildingType_1.BuildingType)
-], Building.prototype, "type", void 0);
+], Building.prototype, "buildingType", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", position_1.Position)
 ], Building.prototype, "position", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Number)
+], Building.prototype, "level", void 0);
 exports.Building = Building;
 //# sourceMappingURL=building.js.map

@@ -5,6 +5,10 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "engines": {
+    "npm": "8.19.3",
+    "node": "18.12.0"
+  },
   "files": [
     "/dist"
   ],
@@ -16,7 +20,8 @@
   },
   "author": "gil",
   "dependencies": {
-    "class-validator": "0.14.0",
+    "@types/validator": "13.12.0",
+    "class-validator": "0.14.1",
     "dotenv": "16.0.3"
   },
   "devDependencies": {

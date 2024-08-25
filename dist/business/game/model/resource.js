@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Resource = void 0;
 const class_validator_1 = require("class-validator");
-const typeorm_1 = require("typeorm");
 const resourceType_1 = require("./resourceType");
 class Resource {
     isValid() {
@@ -32,8 +31,8 @@ __decorate([
     __metadata("design:type", Number)
 ], Resource.prototype, "amount", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
+    (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", resourceType_1.ResourceType)
-], Resource.prototype, "type", void 0);
+], Resource.prototype, "resourceType", void 0);
 exports.Resource = Resource;
 //# sourceMappingURL=resource.js.map

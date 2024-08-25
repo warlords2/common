@@ -34,5 +34,10 @@ __decorate([
     (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
 ], Size.prototype, "weight", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Number)
+], Size.prototype, "height", void 0);
 exports.Size = Size;
 //# sourceMappingURL=size.js.map

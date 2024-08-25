@@ -11,6 +11,8 @@ export class Size implements ISize{
     @IsNumber()
     weight: number;
 
+    @IsNotEmpty()
+    @IsNumber()
     height: number;
 
     isValid(): Promise<ValidationError[]>{

@@ -5,6 +5,9 @@ export declare class ResourceType implements IResourceType {
     max_level: number;
     multiplier: number;
     initial: number;
+    hasMaxLevel: boolean;
+    maxLevel: number;
+    noMarket: boolean;
     fixed: boolean;
     isValid(): Promise<ValidationError[]>;
     constructor(values?: any);

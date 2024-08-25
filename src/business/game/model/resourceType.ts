@@ -1,11 +1,13 @@
 import { IResourceType } from "@core";
 import { IsNotEmpty, validate, ValidationError } from "class-validator";
+import { World } from "./world";
 
 export class ResourceType implements IResourceType{
     
     @IsNotEmpty()
     name: String;
-
+    
+    @IsNotEmpty()
     max_level: number;
     
     @IsNotEmpty()
@@ -14,7 +16,17 @@ export class ResourceType implements IResourceType{
     @IsNotEmpty()
     initial: number;
 
-    fixed = false;
+    @IsNotEmpty()
+    hasMaxLevel: boolean;
+
+    @IsNotEmpty()
+    maxLevel: number;
+
+    @IsNotEmpty()
+    noMarket:boolean;
+
+    @IsNotEmpty()
+    fixed:boolean;
 
     isValid(): Promise<ValidationError[]>{
 

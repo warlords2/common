@@ -4,8 +4,10 @@ export interface IUnitType {
     damage: number;
     health: number;
     agility: number;
+    range: number;
+    txRevivePercentage: number;
     speed: number;
     cargoCapacity: number;
-    trainingTime: number;
+    trainingTimeInHours: number;
     cost: ICost[];
 }

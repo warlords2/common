@@ -1,6 +1,3 @@
-// config default
-export { default as building_scale_default} from './configure/building.scale.production.json';
-export { default as province_scale_default} from './configure/province.scale.production.json';
 
 
 // Enum's
@@ -37,3 +34,18 @@ export { IUnit } from './unit';
 export { ICost } from './cost';
 
 export { IWorld } from './world';
+
+// configs 
+
+export { default as configDefault} from './configure/world.json';
+
+export {IWorldConfig} from './configure/worldConfig';
+export {IBuildingConfig} from './configure/buildingConfig';
+export {ICityConfig} from './configure/cityConfig';
+export {IMarketConfig} from './configure/marketConfig';
+export {INPCConfig} from './configure/npcConfig';
+export {INPCTypeConfig} from './configure/npcTypeConfig';
+export {IPlayerConfig} from './configure/playerConfig';
+export {IProvinceConfig} from './configure/provinceConfig';
+export {IResourceConfig} from './configure/resourceConfig';
+export {IUnitConfig} from './configure/unitConfig';

@@ -6,29 +6,57 @@ import { UnitType } from "./unitType";
 import { Cost } from "./cost";
 
 export class BuildingType implements IBuildingType{
-
     @IsNotEmpty()
     name: string;
-
+    
     @IsNotEmpty()
     size: Size;
 
-    max_level: number;
-    multiplier: number;
-    multiplier_cost: number;
+    @IsNotEmpty()
+    hasMaxLevel: boolean;
+
+    @IsNotEmpty()
+    maxLevel: number;
+    
+    @IsNotEmpty()
     initial: number;
 
+    // trops generate
     hasUnitGenerate: boolean;
-    multiplier_unit_cost: number;
-    multiplier_unit_time: number;
+    multiplierUnitCost: number;
+    multiplierUnitTime: number;
     unitsGenerate: UnitType[];
 
     // warehouse
     hasStore: boolean;
-    multiplier_storage: number;
+    storeAmount: number;
+    multiplierStorage: number;
 
+    // market
+    hasMarket: boolean;
+    initialMaxOffers: number;
+    multiplierMaxOffers: number;
+
+    //Attack and Life 
+    receiveDamage: boolean;
+    txRevive: number;
+    damage: number;
+    health: number;
+    agility: number;
+    range: number;
+    multiplierDamage: number;
+    multiplierHealth: number;
+    multiplierAgility: number;
+    multiplierRange: number;
+
+    // @todo colocar um campo sobre a edificação ser removivel ou não
+    
+    multiplierResources: number;
     resources: ResourceType[];
+
+    multiplierCost: number;
     cost: Cost[];
+    
 
     isValid(): Promise<ValidationError[]>{
 

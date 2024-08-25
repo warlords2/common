@@ -1,10 +1,10 @@
 import { NpcType } from "../enum/npc_type";
-import { INPCTypeonfig } from "./npcTypeConfig";
+import { INPCTypeConfig } from "./npcTypeConfig";
 
 export interface INPCConfig{
     name: String;
     aggressionLevel: number;
     interactionDistance: number;
-    npcTypes: INPCTypeonfig[];
+    npcTypes: INPCTypeConfig[];
     examples: INPCConfig[];
 }

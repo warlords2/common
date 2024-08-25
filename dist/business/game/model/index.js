@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.World = exports.Cost = exports.Unit = exports.Resource = exports.Province = exports.Player = exports.Npc = exports.Market = exports.City = exports.Building = exports.UnitType = exports.ResourceType = exports.BuildingType = exports.Transaction = exports.Sale = exports.Offer = exports.Buy = exports.Size = exports.Position = void 0;
+exports.UnitConfig = exports.ResourceConfig = exports.ProvinceConfig = exports.PlayerConfig = exports.NPCTypeConfig = exports.NPCConfig = exports.MarketConfig = exports.CityConfig = exports.BuildingConfig = exports.WorldConfig = exports.World = exports.Cost = exports.Unit = exports.Resource = exports.Province = exports.Player = exports.Npc = exports.Market = exports.City = exports.Building = exports.UnitType = exports.ResourceType = exports.BuildingType = exports.Transaction = exports.Sale = exports.Offer = exports.Buy = exports.Size = exports.Position = void 0;
 // geometry's
 var position_1 = require("./geometry/position");
 Object.defineProperty(exports, "Position", { enumerable: true, get: function () { return position_1.Position; } });
@@ -42,4 +42,25 @@ var cost_1 = require("./cost");
 Object.defineProperty(exports, "Cost", { enumerable: true, get: function () { return cost_1.Cost; } });
 var world_1 = require("./world");
 Object.defineProperty(exports, "World", { enumerable: true, get: function () { return world_1.World; } });
+// configs 
+var worldConfig_1 = require("./configure/worldConfig");
+Object.defineProperty(exports, "WorldConfig", { enumerable: true, get: function () { return worldConfig_1.WorldConfig; } });
+var buildingConfig_1 = require("./configure/buildingConfig");
+Object.defineProperty(exports, "BuildingConfig", { enumerable: true, get: function () { return buildingConfig_1.BuildingConfig; } });
+var cityConfig_1 = require("./configure/cityConfig");
+Object.defineProperty(exports, "CityConfig", { enumerable: true, get: function () { return cityConfig_1.CityConfig; } });
+var marketConfig_1 = require("./configure/marketConfig");
+Object.defineProperty(exports, "MarketConfig", { enumerable: true, get: function () { return marketConfig_1.MarketConfig; } });
+var npcConfig_1 = require("./configure/npcConfig");
+Object.defineProperty(exports, "NPCConfig", { enumerable: true, get: function () { return npcConfig_1.NPCConfig; } });
+var npcTypeConfig_1 = require("./configure/npcTypeConfig");
+Object.defineProperty(exports, "NPCTypeConfig", { enumerable: true, get: function () { return npcTypeConfig_1.NPCTypeConfig; } });
+var playerConfig_1 = require("./configure/playerConfig");
+Object.defineProperty(exports, "PlayerConfig", { enumerable: true, get: function () { return playerConfig_1.PlayerConfig; } });
+var provinceConfig_1 = require("./configure/provinceConfig");
+Object.defineProperty(exports, "ProvinceConfig", { enumerable: true, get: function () { return provinceConfig_1.ProvinceConfig; } });
+var resourceConfig_1 = require("./configure/resourceConfig");
+Object.defineProperty(exports, "ResourceConfig", { enumerable: true, get: function () { return resourceConfig_1.ResourceConfig; } });
+var unitConfig_1 = require("./configure/unitConfig");
+Object.defineProperty(exports, "UnitConfig", { enumerable: true, get: function () { return unitConfig_1.UnitConfig; } });
 //# sourceMappingURL=index.js.map

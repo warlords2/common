@@ -8,7 +8,9 @@ export declare class UnitType implements IUnitType {
     agility: number;
     speed: number;
     cargoCapacity: number;
-    trainingTime: number;
+    range: number;
+    txRevivePercentage: number;
+    trainingTimeInHours: number;
     cost: Cost[];
     isValid(): Promise<ValidationError[]>;
     constructor(values?: any);

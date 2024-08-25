@@ -12,6 +12,7 @@ export interface ICity{
     owner: INpc;
     size: ISize;
     province: IProvince;
+    world: IWorld;
     position: IPosition;
     buildings: IBuilding[];
     resources: IResource[];

@@ -5,23 +5,22 @@ import { Position } from "./geometry/position";
 import { Npc } from "./npc";
 import { Resource } from "./resource";
 import { Size } from "./geometry/size";
+import { Province } from "./province";
+import { World } from "./world";
 
 export class City implements ICity{
     @IsNotEmpty()
     name: String;
-
     @IsNotEmpty()
+    stability: number;
     owner: Npc;
-
-    @IsNotEmpty()
-    position: Position;
-    
     @IsNotEmpty()
     size: Size;
-
+    province: Province;
+    position: Position;
     buildings: Building[];
     resources: Resource[];
-
+    world: World;
     isValid(): Promise<ValidationError[]>{
 
       let groups = undefined;

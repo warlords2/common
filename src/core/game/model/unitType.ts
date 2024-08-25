@@ -10,13 +10,8 @@ export interface IUnitType{
     agility: number;
     range: number;
     txRevivePercentage: number;
-
-    world: IWorld;
-
     speed: number;
     cargoCapacity: number;
     trainingTimeInHours: number;
-    
-
     cost: ICost[];
 }

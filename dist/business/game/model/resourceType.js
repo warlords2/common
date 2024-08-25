@@ -18,7 +18,6 @@ class ResourceType {
         return isValid;
     }
     constructor(values = {}) {
-        this.fixed = false;
         if (Object.entries(values).length === 0 && values.constructor === Object) {
             return;
         }
@@ -32,10 +31,30 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Number)
+], ResourceType.prototype, "max_level", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
 ], ResourceType.prototype, "multiplier", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Number)
 ], ResourceType.prototype, "initial", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Boolean)
+], ResourceType.prototype, "hasMaxLevel", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], ResourceType.prototype, "maxLevel", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Boolean)
+], ResourceType.prototype, "noMarket", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Boolean)
+], ResourceType.prototype, "fixed", void 0);
 exports.ResourceType = ResourceType;
 //# sourceMappingURL=resourceType.js.map

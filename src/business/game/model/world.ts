@@ -4,15 +4,18 @@ import { Market } from "./market";
 import { Npc } from "./npc";
 import { Player } from "./player";
 import { Province } from "./province";
+import { WorldConfig } from "./configure/worldConfig";
 
 export class World implements IWorld{
     @IsNotEmpty()
     name: string;
     market: Market;
+
     provinces: Province[];
     npcs: Npc[];
     players: Player[];
-    
+    worldConfig: WorldConfig;
+
     isValid(): Promise<ValidationError[]>{
 
       let groups = undefined;

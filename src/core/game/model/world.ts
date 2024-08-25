@@ -1,4 +1,5 @@
 import { IBuildingType } from "./buildingType";
+import { IWorldConfig } from "./configure/worldConfig";
 import { IMarket } from "./market";
 import { INpc } from "./npc";
 import { IPlayer } from "./player";
@@ -10,11 +11,7 @@ export interface IWorld{
     name: string;
     market: IMarket;
     provinces: IProvince[];
-
-    buildingType: IBuildingType[];
-    resourceType: IResourceType[];
-    unitType: IUnitType[];
-
+    worldConfig: IWorldConfig;
     npcs: INpc[];
     players: IPlayer[];
  }

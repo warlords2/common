@@ -2,7 +2,7 @@ import { ICity } from "../city";
 import { NpcType } from "../enum/npc_type";
 import { ICityConfig } from "./cityConfig";
 
-export interface INPCTypeonfig{
+export interface INPCTypeConfig{
     name: String;
     npcType: NpcType;
     minPeerProvince: number;

@@ -3,7 +3,7 @@ import { ValidationError } from "class-validator";
 import { ResourceType } from "./resourceType";
 export declare class Resource implements IResource {
     amount: number;
-    type: ResourceType;
+    resourceType: ResourceType;
     isValid(): Promise<ValidationError[]>;
     constructor(values?: any);
 }

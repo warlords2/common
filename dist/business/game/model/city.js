@@ -11,8 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.City = void 0;
 const class_validator_1 = require("class-validator");
-const position_1 = require("./geometry/position");
-const npc_1 = require("./npc");
 const size_1 = require("./geometry/size");
 class City {
     isValid() {
@@ -33,12 +31,8 @@ __decorate([
 ], City.prototype, "name", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    __metadata("design:type", npc_1.Npc)
-], City.prototype, "owner", void 0);
-__decorate([
-    (0, class_validator_1.IsNotEmpty)(),
-    __metadata("design:type", position_1.Position)
-], City.prototype, "position", void 0);
+    __metadata("design:type", Number)
+], City.prototype, "stability", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", size_1.Size)

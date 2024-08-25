@@ -24,3 +24,18 @@ export { Resource } from './resource';
 export { Unit } from './unit';
 export { Cost } from './cost';
 export { World } from './world';
+
+
+
+// configs 
+
+export {WorldConfig} from './configure/worldConfig';
+export {BuildingConfig} from './configure/buildingConfig';
+export {CityConfig} from './configure/cityConfig';
+export {MarketConfig} from './configure/marketConfig';
+export {NPCConfig} from './configure/npcConfig';
+export {NPCTypeConfig} from './configure/npcTypeConfig';
+export {PlayerConfig} from './configure/playerConfig';
+export {ProvinceConfig} from './configure/provinceConfig';
+export {ResourceConfig} from './configure/resourceConfig';
+export {UnitConfig} from './configure/unitConfig';

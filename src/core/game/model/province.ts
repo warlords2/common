@@ -8,7 +8,6 @@ export interface IProvince{
     size: ISize;
     position: IPosition;
     world: IWorld;
-
     /* @todo futuro sistema de desastres
     type: string; // Tipo Terremotos, Tempestade
     frequency: number; // Frequência com que o desastre pode ocorrer

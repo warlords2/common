@@ -13,8 +13,6 @@ export interface IBuildingType{
     
     initial: number;
 
-    world: IWorld;
-
     // trops generate
     hasUnitGenerate: boolean;
     multiplierUnitCost: number;

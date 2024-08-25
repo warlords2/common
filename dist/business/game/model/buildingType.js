@@ -33,5 +33,17 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", size_1.Size)
 ], BuildingType.prototype, "size", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Boolean)
+], BuildingType.prototype, "hasMaxLevel", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], BuildingType.prototype, "maxLevel", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], BuildingType.prototype, "initial", void 0);
 exports.BuildingType = BuildingType;
 //# sourceMappingURL=buildingType.js.map
