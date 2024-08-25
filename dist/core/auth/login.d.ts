@@ -1,9 +1,9 @@
 import { IUser } from "../model";
-import { TypeLogin } from "./type_login";
+import { LoginType } from "./loginType";
 export interface ILogin {
     identifier: string;
     password: string;
     nonce: string;
-    type: TypeLogin;
+    loginType: LoginType;
     user: IUser;
 }

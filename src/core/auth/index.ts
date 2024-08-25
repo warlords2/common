@@ -1,2 +1,2 @@
 export { ILogin } from './login';
-export { TypeLogin } from './type_login';
+export { LoginType } from './loginType';

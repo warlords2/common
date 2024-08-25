@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TypeLogin = void 0;
-var type_login_1 = require("./type_login");
-Object.defineProperty(exports, "TypeLogin", { enumerable: true, get: function () { return type_login_1.TypeLogin; } });
+exports.LoginType = void 0;
+var loginType_1 = require("./loginType");
+Object.defineProperty(exports, "LoginType", { enumerable: true, get: function () { return loginType_1.LoginType; } });
 //# sourceMappingURL=index.js.map

@@ -1,4 +1,4 @@
-import { ILogin, TypeLogin } from "@core";
+import { ILogin, LoginType } from "@core";
 import { IsEmail, IsNotEmpty, IsStrongPassword, Length, validate, ValidationError } from "class-validator";
 import { User } from "../model";
 
@@ -6,10 +6,10 @@ import { User } from "../model";
 export class Login implements ILogin{
     @IsNotEmpty()
     @IsEmail({},{
-        groups:[ TypeLogin.MAIL ],
+        groups:[ LoginType.MAIL ],
     })
     @Length(14, 80,{
-        groups:[ TypeLogin.NONCE ]
+        groups:[ LoginType.NONCE ]
     })
     identifier: string;
 
@@ -20,17 +20,17 @@ export class Login implements ILogin{
         minUppercase: 1,
         minLowercase: 1
     },{
-        groups:[ TypeLogin.MAIL ]
+        groups:[ LoginType.MAIL ]
     })
     password: string;
     
     @IsNotEmpty({
-        groups:[ TypeLogin.NONCE ]
+        groups:[ LoginType.NONCE ]
     })
     nonce: string;
 
     @IsNotEmpty()
-    type: TypeLogin;
+    loginType: LoginType;
 
     user: User;
 
@@ -38,7 +38,7 @@ export class Login implements ILogin{
         
         let groups = undefined;
 
-        if( this.type )groups = [ this.type ];
+        if( this.loginType )groups = [ this.loginType ];
         
         let isValid = validate(this, { groups , validationError: { target: false }});
 

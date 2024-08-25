@@ -15,8 +15,8 @@ const class_validator_1 = require("class-validator");
 class Login {
     isValid() {
         let groups = undefined;
-        if (this.type)
-            groups = [this.type];
+        if (this.loginType)
+            groups = [this.loginType];
         let isValid = (0, class_validator_1.validate)(this, { groups, validationError: { target: false } });
         return isValid;
     }
@@ -30,10 +30,10 @@ class Login {
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsEmail)({}, {
-        groups: [_core_1.TypeLogin.MAIL],
+        groups: [_core_1.LoginType.MAIL],
     }),
     (0, class_validator_1.Length)(14, 80, {
-        groups: [_core_1.TypeLogin.NONCE]
+        groups: [_core_1.LoginType.NONCE]
     }),
     __metadata("design:type", String)
 ], Login.prototype, "identifier", void 0);
@@ -45,19 +45,19 @@ __decorate([
         minUppercase: 1,
         minLowercase: 1
     }, {
-        groups: [_core_1.TypeLogin.MAIL]
+        groups: [_core_1.LoginType.MAIL]
     }),
     __metadata("design:type", String)
 ], Login.prototype, "password", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)({
-        groups: [_core_1.TypeLogin.NONCE]
+        groups: [_core_1.LoginType.NONCE]
     }),
     __metadata("design:type", String)
 ], Login.prototype, "nonce", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], Login.prototype, "type", void 0);
+], Login.prototype, "loginType", void 0);
 exports.Login = Login;
 //# sourceMappingURL=login.js.map
