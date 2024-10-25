@@ -37,7 +37,8 @@ export { IWorld } from './world';
 
 // configs 
 
-export { default as configDefault} from './configure/world.json';
+import { default as configDefault} from './configure/world.json';
+export { configDefault };
 
 export {IWorldConfig} from './configure/worldConfig';
 export {IBuildingConfig} from './configure/buildingConfig';
