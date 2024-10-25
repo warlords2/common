@@ -13,7 +13,7 @@ export interface IWorldConfig{
     hasLimitUser: boolean;
     limitUser: number;
 
-    hasMaxTimeInHours: number;
+    hasMaxTimeInHours: boolean;
     maxTimeInHours: number;
 
     hasCityForVitory: boolean;

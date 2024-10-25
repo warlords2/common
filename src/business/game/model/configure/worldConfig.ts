@@ -17,7 +17,7 @@ export class WorldConfig implements IWorldConfig{
     hasLimitUser: boolean;
     limitUser: number;
 
-    hasMaxTimeInHours: number;
+    hasMaxTimeInHours: boolean;
     maxTimeInHours: number;
 
     hasCityForVitory: boolean;
